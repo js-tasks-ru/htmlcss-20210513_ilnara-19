@@ -5,13 +5,15 @@
     --black: #212429;
     --pink: #F784AD;
     --purple: #7048E8;
-    --blue: #374FC7;
+    --blue: #4263EB;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
-    --grey-4: #495057;
 
+    --blueHover: #2342C0;
+    --purpleHover: #5028C6;
+    
     --error: var(--red);
     --success: var(--blue);
 
@@ -21,4 +23,18 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+/* Section */
+.section__main-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 38px;
+  font-weight: 500;
 }
