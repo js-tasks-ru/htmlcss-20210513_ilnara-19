@@ -1,5 +1,32 @@
 @import '../fonts/fonts.css';
 
+/* Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+/* Убираем стандартный маркер Chrome */
+details summary::-webkit-details-marker {
+  display: none
+}
+/* Убираем стандартный маркер Firefox */
+details > summary {
+  list-style: none;
+}
+
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -34,9 +61,3 @@
   margin: 0 auto;
 }
 
-/* Section */
-.section__main-title {
-  font-family: 'Inter', sans-serif;
-  font-size: 38px;
-  font-weight: 500;
-}
