@@ -1,5 +1,14 @@
 @import '../fonts/fonts.css';
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 0;
+}
+
 :root {
     --white: #ffffff;
     --black: #212429;

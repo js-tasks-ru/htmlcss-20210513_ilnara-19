@@ -1,133 +1,83 @@
 /* Стилизация кнопки */
-h1,
-h5 {
-  margin: 0;
-  padding: 0;
-}
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  padding: 0;
-}
-
-.section {
-  padding: 0 165px 0 163px;
-}
-
-.section__inner {
-  display: flex;
-}
-
-.section__main-title--btn {
-  margin-top: 150px;
-  margin-right: 235px;
-  margin-bottom: 255px;
-}
-
-.section__title {
-  display: inline-block;
-}
-
-.section_subtitle {
-  margin-top: 160px;
-  margin-right: 40px;
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  color: #ACB5BD;
-  text-transform: uppercase;
-  opacity: 40%;
-}
-
-.section_subtitle:last-child {
-  margin-top: 48px;
-  margin-right: 33px;
-}
-
-.section__group {
-  margin-top: 139px;
-  margin-bottom: 136px;
-}
-
-.btn {
+.btn-list {
   display: inline-block;
   margin-right: 33px;
   
 }
 
-.btn:last-child {
+.btn-list:last-child {
   margin: 0;
 }
 
-.btn li {
+.btn-list li {
   list-style-type: none;
 }
 
-.btn__item {
-  width: 189px;
-  height: 48px;
+.btn-list__btn {
   margin-bottom: 16px;
-  border: 0;
+}
+
+.btn {
+  padding: 15px 60px 14px;
+  border: none;
   border-radius: 8px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   color: var(--white);
+  text-align: center;
 }
 
-.btn__item--blue {
+.btn--primary {
   background-color: var(--primary);
   transition: background-color .2s linear;
 }
 
-.btn__item--blue:hover {
+.btn--primary:hover {
   background-color: var(--blueHover);
 }
 
-.btn__item--blue-dis {
-  margin-bottom: 0;
+.btn--disabled-primary {
   background-color: var(--primary);
   opacity: 50%;
   cursor:not-allowed;
+  pointer-events: none;
 }
 
-.btn__item--purple {
+.btn--secondary {
   background-color: var(--secondary);
   transition: background-color .2s linear;
 }
 
-.btn__item--purple:hover {
+.btn--secondary:hover {
   background-color: var(--purpleHover);
 }
 
-.btn__item--purple-dis {
-  margin-bottom: 0;
+.btn--disabled-secondary {
   background-color: var(--secondary);
   opacity: 50%;
   cursor:not-allowed;
+  pointer-events: none;
 }
 
-.btn__item--alternate {
+.btn--alternate {
   background-color: var(--white);
   border: 1px solid var(--grey-3);
   color: #495057;
   transition: border .2s linear;
 }
 
-.btn__item--alternate:hover {
+.btn--alternate:hover {
   border: 1px solid var(--black); 
 }
 
-.btn__item--alternate-dis {
-  margin-bottom: 0;
+.btn--disabled-alternate {
   border: 1px solid var(--grey-3);
   background-color: var(--white);
   color: var(--grey-4);
   opacity: .4;
   cursor:not-allowed;
+  pointer-events: none;
 }

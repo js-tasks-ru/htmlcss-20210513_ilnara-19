@@ -2,11 +2,48 @@
 <!-- Страница с кнопкой -->
 <html lang="ru">
     <head>
-       <link rel="stylesheet" href="../../assets/css/normalize.css">
         <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="../../assets/fonts/fonts.css">
         <link rel="stylesheet" href="./button.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          .section {
+             padding: 0 165px 0 163px;
+          }
+
+          .section__inner {
+            display: flex;
+          }
+
+          .section__main-title--btn {
+            margin-top: 150px;
+            margin-right: 235px;
+            margin-bottom: 255px;
+          }
+
+          .section__title {
+           display: inline-block;
+          }
+
+          .section_subtitle {
+           margin-top: 160px;
+           margin-right: 40px;
+           font-family: 'Inter', sans-serif;
+           font-size: 12px;
+           font-weight: 500;
+           color: #ACB5BD;
+           text-transform: uppercase;
+           opacity: 40%;
+          }
+
+          .section_subtitle:last-child {
+            margin-top: 48px;
+            margin-right: 33px;
+          }
+
+           .section__group {
+            margin-top: 139px;
+            margin-bottom: 136px;
+          }
+        </style>
     </head>
     <body>
         <section class="section">
@@ -18,17 +55,17 @@
                 <h5 class="section_subtitle">DISABLED</h5>
               </div>
               <div class="section__group">
-                <ul class="btn">
-                  <li><button class="btn__item btn__item--blue" type="button">Primery</button></li>
-                  <li><button class="btn__item btn__item--blue-dis" type="button">Primery</button></li>
+                <ul class="btn-list">
+                  <li><button class="btn btn-list__btn btn--primary" type="button">Primary</button></li>
+                  <li><button class="btn btn-list__btn btn--disabled-primary" type="button">Primary</button></li>
                 </ul>
-                <ul class="btn">
-                  <li><button class="btn__item btn__item--purple" type="button">Secondary</button></li>
-                  <li><button class="btn__item btn__item--purple-dis" type="button">Secondary</button></li>
+                <ul class="btn-list">
+                  <li><button class="btn btn-list__btn btn--secondary" type="button">Secondary</button></li>
+                  <li><button class="btn btn-list__btn btn--disabled-secondary" type="button">Secondary</button></li>
                 </ul>
-                <ul class="btn ">
-                  <li><button class="btn__item btn__item--alternate" type="button">Alternate</button></li>
-                  <li><button class="btn__item btn__item--alternate-dis" type="button">Alternate</button></li>
+                <ul class="btn-list">
+                  <li><button class="btn btn-list__btn btn--alternate" type="button">Alternate</button></li>
+                  <li><button class="btn btn-list__btn btn--disabled-alternate" type="button">Alternate</button></li>
                 </ul>
           </div>
         </div>
