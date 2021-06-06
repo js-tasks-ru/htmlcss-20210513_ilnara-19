@@ -1,1 +1,90 @@
 /* Стилизация аккордеона */
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* Убираем стандартный маркер Chrome */
+details summary::-webkit-details-marker {
+  display: none
+}
+/* Убираем стандартный маркер Firefox */
+details > summary {
+  list-style: none;
+}
+
+.section__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__main-title--acd {
+  margin-top: 75px;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 730px;
+  margin-top: 75px;
+  margin-bottom: 116px;
+}
+
+.accordion__item {
+  margin-bottom: 8px;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+}
+
+.accordion__item:last-child {
+  margin-bottom: 0;
+}
+
+.accordion__header {
+  position: relative;
+  padding: 24px 0;
+  padding-left: 32px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--black);
+}
+
+.accordion__header::after {
+  content:'';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #495057;
+  border-right: 2px solid #495057;
+
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  z-index: 1;
+
+  transform: rotate(-45deg);
+
+  cursor: pointer;
+}
+
+.accordion__item[open]>.accordion__header {
+  padding-bottom: 16px;
+}
+
+.accordion__item[open]>.accordion__header::after  {
+  transform: rotate(135deg);
+}
+
+.accordion__text {
+  padding-left: 32px;
+  padding-bottom: 32px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--grey-4);
+}

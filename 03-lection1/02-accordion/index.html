@@ -2,17 +2,50 @@
 <!-- Страница с аккордеоном -->
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
+      <link rel="stylesheet" href="../../assets/css/normalize.css">
+      <link rel="stylesheet" href="../../assets/css/main.css">
+      <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+      <link rel="stylesheet" href="./accordion.css">
     </head>
     <body>
-        <details>
-            <summary>
-                Accordion item
+      <section class="section">
+        <div class="container">
+          <div class="section__inner">
+            <h1 class="section__main-title section__main-title--acd">Accordion</h1>
+            <div class="accordion">
+              <details class="accordion__item">
+                <summary class="accordion__header">
+                    Accordion item 1
+                </summary>
+                <p class="accordion__text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                  Velit officia consequat duis enim velit mollit. 
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </details>
+            <details class="accordion__item">
+              <summary class="accordion__header">
+                  Accordion item 2
+              </summary>
+              <p class="accordion__text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                Velit officia consequat duis enim velit mollit. 
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+          </details>
+          <details class="accordion__item">
+            <summary class="accordion__header">
+                Accordion item 3
             </summary>
-            <p>
-                Hidden content
+            <p class="accordion__text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+              Velit officia consequat duis enim velit mollit. 
+              Exercitation veniam consequat sunt nostrud amet.
             </p>
         </details>
+        </div>
+          </div>
+       </div>
+      </section>
     </body>
 </html>
