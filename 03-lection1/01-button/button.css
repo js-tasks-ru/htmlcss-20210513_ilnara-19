@@ -1,23 +1,5 @@
 /* Стилизация кнопки */
 
-.btn-list {
-  display: inline-block;
-  margin-right: 33px;
-  
-}
-
-.btn-list:last-child {
-  margin: 0;
-}
-
-.btn-list li {
-  list-style-type: none;
-}
-
-.btn-list__btn {
-  margin-bottom: 16px;
-}
-
 .btn {
   padding: 15px 60px 14px;
   border: none;
@@ -30,6 +12,11 @@
   text-align: center;
 }
 
+.btn--disabled {
+  opacity: 50%;
+  pointer-events: none;
+}
+
 .btn--primary {
   background-color: var(--primary);
   transition: background-color .2s linear;
@@ -39,13 +26,6 @@
   background-color: var(--blueHover);
 }
 
-.btn--disabled-primary {
-  background-color: var(--primary);
-  opacity: 50%;
-  cursor:not-allowed;
-  pointer-events: none;
-}
-
 .btn--secondary {
   background-color: var(--secondary);
   transition: background-color .2s linear;
@@ -53,13 +33,6 @@
 
 .btn--secondary:hover {
   background-color: var(--purpleHover);
-}
-
-.btn--disabled-secondary {
-  background-color: var(--secondary);
-  opacity: 50%;
-  cursor:not-allowed;
-  pointer-events: none;
 }
 
 .btn--alternate {
@@ -78,6 +51,5 @@
   background-color: var(--white);
   color: var(--grey-4);
   opacity: .4;
-  cursor:not-allowed;
   pointer-events: none;
 }

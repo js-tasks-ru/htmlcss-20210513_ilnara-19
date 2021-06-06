@@ -43,6 +43,23 @@
             margin-top: 139px;
             margin-bottom: 136px;
           }
+
+          .btn-list {
+            display: inline-block;
+            margin-right: 33px;
+          }
+
+           .btn-list:last-child {
+            margin: 0;
+          }
+
+           .btn-list li {
+            list-style-type: none;
+          }
+
+            .btn-list__btn {
+             margin-bottom: 16px;
+          }
         </style>
     </head>
     <body>
@@ -57,11 +74,11 @@
               <div class="section__group">
                 <ul class="btn-list">
                   <li><button class="btn btn-list__btn btn--primary" type="button">Primary</button></li>
-                  <li><button class="btn btn-list__btn btn--disabled-primary" type="button">Primary</button></li>
+                  <li><button class="btn btn-list__btn btn--disabled" type="button">Primary</button></li>
                 </ul>
                 <ul class="btn-list">
                   <li><button class="btn btn-list__btn btn--secondary" type="button">Secondary</button></li>
-                  <li><button class="btn btn-list__btn btn--disabled-secondary" type="button">Secondary</button></li>
+                  <li><button class="btn btn-list__btn btn--disabled" type="button">Secondary</button></li>
                 </ul>
                 <ul class="btn-list">
                   <li><button class="btn btn-list__btn btn--alternate" type="button">Alternate</button></li>
