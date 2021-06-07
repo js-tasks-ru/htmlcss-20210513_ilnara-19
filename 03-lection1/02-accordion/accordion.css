@@ -1,35 +1,8 @@
+
 /* Стилизация аккордеона */
-h1 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-/* Убираем стандартный маркер Chrome */
-details summary::-webkit-details-marker {
-  display: none
-}
-/* Убираем стандартный маркер Firefox */
-details > summary {
-  list-style: none;
-}
-
-.section__inner {
-  display: flex;
-  justify-content: space-between;
-}
-
-.section__main-title--acd {
-  margin-top: 75px;
-}
-
 .accordion {
   width: 100%;
   max-width: 730px;
-  margin-top: 75px;
-  margin-bottom: 116px;
 }
 
 .accordion__item {
@@ -58,8 +31,8 @@ details > summary {
   display: block;
   width: 8px;
   height: 8px;
-  border-top: 2px solid #495057;
-  border-right: 2px solid #495057;
+  border-top: 2px solid var(--grey-4);
+  border-right: 2px solid var(--grey-4);
 
   position: absolute;
   top: 32px;
@@ -80,8 +53,7 @@ details > summary {
 }
 
 .accordion__text {
-  padding-left: 32px;
-  padding-bottom: 32px;
+  padding: 0 32px 32px;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
