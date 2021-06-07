@@ -1,13 +1,8 @@
 
 /* Стилизация аккордеона */
-
-
-
 .accordion {
   width: 100%;
   max-width: 730px;
-  padding-top: 75px;
-  padding-bottom: 116px;
 }
 
 .accordion__item {
