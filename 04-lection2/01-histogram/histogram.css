@@ -1,5 +1,4 @@
 /* Стилизация гистограммы*/
-
 .histogram {
   width: 100%;
   padding: 16px 24px 24px;
@@ -10,6 +9,7 @@
 .histogram__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 6px;
   font-family: 'Inter', sans-serif;
 }
@@ -42,14 +42,8 @@
 
 .histogram__bars {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 50px;
-}
-
-.histogram__col {
-  display: flex;
   align-items: flex-end;
+  height: 50px;
 }
 
 .histogram__item {
@@ -135,4 +129,8 @@
 
 .histogram__item--29 {
   height: 25%;
+}
+
+.histogram__item--17 {
+  height: 45%;
 }
