@@ -1,0 +1,5 @@
+/* Стилизация главного блока */
+
+.main {
+  background-color: var(--grey-5);
+}

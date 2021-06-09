@@ -1,0 +1,24 @@
+/* Стилизация footer */
+
+.footer {
+  padding-top: 71px;
+}
+
+.footer__title {
+  margin-bottom: 32px;
+  font-family: 'Inter', sans-serif;
+  font-size: 38px;
+  line-height: 1.3;
+  font-weight: 500;
+  color: var(--black);
+  text-align: center;
+}
+
+.footer__text {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--black);
+  text-align: center;
+}
