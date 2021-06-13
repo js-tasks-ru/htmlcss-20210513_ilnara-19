@@ -13,6 +13,6 @@
   margin-right: 0;
 }
 
-.active {
+.nav__main-link_active {
   color: var(--black);
 }
