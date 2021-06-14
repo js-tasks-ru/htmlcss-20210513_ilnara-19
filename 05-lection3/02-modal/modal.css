@@ -1,0 +1,61 @@
+/* Стилизация modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, .7);
+  width: 100%;
+  height: 100%;
+
+
+  display: none;
+}
+
+.modal__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.modal__content {
+  position: absolute;
+  z-index: 15;
+  padding: 30px 40px;
+  border-radius: 8px;
+  background-color: var(--white);
+
+}
+
+.modal__header {
+  position: relative;
+}
+
+.modal__title {
+  margin-bottom: 14px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--blue-1);
+}
+
+.modal__close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -80%;
+  left: 100%;
+  z-index: 1;
+
+  cursor: pointer;
+}
+
+.modal__text {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--grey-4);
+}
