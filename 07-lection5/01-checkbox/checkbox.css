@@ -16,6 +16,10 @@
   margin-bottom: 16px;
 }
 
+.checkbox__state--disabled {
+  opacity: .5;
+}
+
 .checkbox__control {
   width: 28px;
   height: 28px;
