@@ -20,8 +20,6 @@
 }
 
 .modal__content {
-  position: absolute;
-  z-index: 15;
   padding: 30px 40px;
   border-radius: 8px;
   background-color: var(--white);
