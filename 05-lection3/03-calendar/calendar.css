@@ -1,0 +1,70 @@
+/* Стилизация календаря */
+.calendar {
+  width: 100%;
+  max-width: 320px;
+  padding: 28px 30px 40px;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+}
+
+.calendar__title {
+  margin-bottom: 24px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--blue-1);
+  text-align: center;
+}
+
+.calendar__wrapper {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.calendar__inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+
+.calendar__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: var(--blue-1);
+  text-align: center;
+}
+
+.calendar__item--day {
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--grey-6);
+}
+
+.calendar__item--active {
+  padding: 8px 10px;
+  background-color: var(--blue-2);
+  color: var(--white);
+}
+
+.calendar__item--between-active {
+  padding: 8px 10px;
+  background-color: var(--blue-3);
+}
+
+.calendar__item--numder {
+  margin-bottom: 0;
+}
+
