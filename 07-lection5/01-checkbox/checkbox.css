@@ -18,6 +18,7 @@
 
 .checkbox__state--disabled {
   opacity: .5;
+  pointer-events: none;
 }
 
 .checkbox__control {
