@@ -7,10 +7,6 @@ body {
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 h1,
 h2,
 h3,
@@ -26,6 +22,11 @@ p {
 
 span {
   margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 *, ::after, ::before {
@@ -47,16 +48,20 @@ details > summary {
     --white-2: #F3F5F5;
     --white-3: #E3E7EA;
     --black: #212429;
-    --black-1: #000000;
     --pink: #F784AD;
     --purple: #7048E8;
     --blue: #4263EB;
+    --blue-1: #334D6E;
+    --blue-2: #4263EB;
+    --blue-3: #A0B1F5;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
     --grey-5: #F9FAFC;
+    --grey-6: #90A0B7;
+    
 
     --blueHover: #2342C0;
     --purpleHover: #5028C6;
@@ -67,6 +72,7 @@ details > summary {
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
 }
 
 * {

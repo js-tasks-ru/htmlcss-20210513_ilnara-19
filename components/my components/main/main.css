@@ -4,7 +4,3 @@
   background-color: var(--grey-5);
 }
 
-.main__inner {
-  display: grid;
-  grid-template-columns: 229px 1fr;
-}

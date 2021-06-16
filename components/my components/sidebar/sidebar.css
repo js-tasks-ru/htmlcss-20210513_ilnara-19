@@ -1,11 +1,11 @@
 /* Sidebar */
-.nav__item {
+.sidebar__item {
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
 }
 
-.nav__title {
+.sidebar__title {
   margin-bottom: 16px;
   font-family: 'Inter', sans-serif;
   font-size: 20px;
@@ -14,7 +14,7 @@
   color: var(--black-1);
 }
 
-.nav__bar-link {
+.sidebar__link {
   margin-bottom: 4px;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
@@ -23,6 +23,6 @@
   cursor: pointer;
 }
 
-.nav__bar-link:hover {
+.sidebar__link:hover {
   color: var(--notification);
 }

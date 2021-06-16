@@ -8,13 +8,6 @@
   background-color: var(--grey-5);
 }
 
-.header__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 82px;
-}
-
 .header__title {
   padding-top: 96px;
   padding-bottom: 77px;

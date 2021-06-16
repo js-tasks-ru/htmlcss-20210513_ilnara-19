@@ -1,6 +1,6 @@
 /* Main navigation */
 
-.nav-main__link {
+.nav__link {
   margin-right: 24px;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -9,10 +9,10 @@
   cursor: pointer;
 }
 
-.nav-main__link:last-child {
+.nav__link:last-child {
   margin-right: 0;
 }
 
-.nav__main-link_active {
+.nav__link--active {
   color: var(--black);
 }
