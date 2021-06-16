@@ -6,23 +6,18 @@
         <link rel="stylesheet" href="./input.css">
         <style>
           body {
-            display: flex;
-            
-            justify-content: center;
-            align-items: center;
+           display: flex;
+           align-items: center;
           }
 
           .box {
             margin-right: 30px;
           }
 
-
-          .text {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+          .box_input {
             margin-bottom: 16px;
           }
+
         </style>
     </head>
     <body>
@@ -45,41 +40,40 @@
           
         
       <div class="box">
-      <div class="text">
-       <label class="text__title">Label</label>
-       <input class="text__input" type="text" placeholder="Placeholder">
+      <div class="input box_input">
+       <label class="input__title">Label</label>
+       <input class="input__state" type="text" placeholder="Placeholder">
       </div>
-      <div class="text">
-       <label class="text__title" class="text">Success</label>
-       <div class="text__field">
-       <input class="text__input text__input--success" type="text">
-       <svg class="text__icon text__icon--success">
+      <div class="input box_input">
+       <label class="input__title" class="text">Success</label>
+       <div class="input__field">
+       <input class="input__state input__state--success" type="text">
+       <svg class="input__icon input__icon--success">
          <use xlink:href="#success"></use>
        </svg>
-
       </div>
       </div>
       </div>
     </div>
     <div class="box">
-      <div class="text">
-       <label class="text__title">Focus</label>
-       <input class="text__input" type="text">
+      <div class="input box_input">
+       <label class="input__title">Focus</label>
+       <input class="input__state" type="text">
       </div>
-      <div class="text">
-       <label class="text__title" class="text">Error</label>
-       <div class="text__field">
-       <input class="text__input text__input--invalid" type="text">
-       <svg class="text__icon text__icon--error">
+      <div class="input box_input">
+       <label class="input__title" class="text">Error</label>
+       <div class="input__field">
+       <input class="input__state input__state--invalid" type="text">
+       <svg class="input__icon input__icon--error">
          <use xlink:href="#error"></use>
        </svg>
       </div>
       </div>
     </div>
     <div class="box">
-      <div class="text">
-       <label class="text__title">Disabled</label>
-       <input class="text__input text__input--disabled" type="text">
+      <div class="input box_input">
+       <label class="input__title">Disabled</label>
+       <input class="input__state input__state--disabled" type="text">
       </div>
     </div>
 
