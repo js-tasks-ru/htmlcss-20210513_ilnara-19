@@ -28,6 +28,10 @@
   margin-left: 57px;
 }
 
+.template_toggler {
+  margin: 0 15px;
+}
+
 .template__main {
   display: grid;
   grid-template-columns: 229px 1fr;
