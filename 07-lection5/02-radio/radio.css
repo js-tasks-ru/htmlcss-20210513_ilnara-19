@@ -13,11 +13,16 @@
   align-items: center;
 
   cursor: pointer;
+  
+}
+
+.radio__state--margin {
   margin-bottom: 16px;
 }
 
 .radio__state--disabled {
   opacity: .5;
+  pointer-events: none;
 }
 
 .radio__control {
