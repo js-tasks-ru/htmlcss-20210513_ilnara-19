@@ -1,0 +1,78 @@
+/* Стилизация полей */
+.input {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+}
+
+.input__state {
+  width: 100%;
+  padding: 17px 24px 13px;
+  border: 1px solid var(--grey-2);
+  border-radius: 8px;
+  outline: none;
+  appearance: none
+}
+
+.input__state--disabled {
+  pointer-events: none;
+  background-color: var(--grey-2);
+}
+
+.input__state::placeholder {
+  color: var(--grey-2);
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: lighter;
+}
+
+.input__title {
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--grey-3);
+}
+
+.input__field {
+  position: relative;
+}
+
+.input__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  
+
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  
+  display: none;
+}
+
+.input__icon--error {
+  color: var(--error);
+}
+
+.input__icon--success {
+  color: var(--success);
+}
+
+.input__state:focus {
+  border: 1px solid var(--blue-2);
+}
+
+.input__state--invalid:focus ~ .input__icon {
+ display: block;
+}
+
+.input__state--success:focus ~ .input__icon {
+  display: block;
+}
+
+.input__state--invalid:focus {
+  border: 1px solid var(--red);
+}
+
