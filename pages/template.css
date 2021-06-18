@@ -37,7 +37,7 @@
   grid-template-columns: 229px 1fr;
 }
 
-.section {
+.template__section {
   background-color: var(--white);
   border-radius: 12px;
   box-shadow: 0 2px 4px 0 rgba(var(--black), .05);
@@ -45,7 +45,7 @@
   padding-left: 48px;
 }
 
-.section__title {
+.template__section-title {
   font-family: 'Inter', sans-serif;
   font-size: 28px;
   line-height: 1.4;
