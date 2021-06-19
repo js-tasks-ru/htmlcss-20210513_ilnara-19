@@ -25,6 +25,10 @@ span {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 *, ::after, ::before {
   box-sizing: border-box;
 }
@@ -65,9 +69,11 @@ details > summary {
     
     --error: var(--red);
     --success: var(--blue);
+    --notification: #D84910;
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
 }
 
 * {
