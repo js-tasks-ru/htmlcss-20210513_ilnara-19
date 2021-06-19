@@ -6,14 +6,15 @@
 }
 
 .tooltip__answer {
-  margin-bottom: 12px;
   padding: 13px 21px 8px;
   background-color: var(--blue-2);
   border-radius: 10px;
 
   position: relative;
-  
+  transform: translate(0, -12px);
+
   opacity: 0;
+
   transition: opacity .4s linear;
 }
 
