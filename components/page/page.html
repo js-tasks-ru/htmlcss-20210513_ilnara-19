@@ -7,12 +7,55 @@
       <link rel="stylesheet" href="../my components/main.css">
       <link rel="stylesheet" href="../my components/card.css">
       <link rel="stylesheet" href="../my components/footer.css">
+      <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
+      <link rel="stylesheet" href="../../05-lection3/03-calendar/calendar.css">
       <link rel="stylesheet" href="./page.css">
     </head>
 </head>
 <body>
 <header class="header">
   <div class="container">
+    <div class="header__inner">
+        <div class="header__logo">
+          <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="1" width="30" height="30" fill="#212429"/>
+            <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+            <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+          </svg>
+          </div>
+          <div class="header__menu">
+          <nav class="nav">
+            <a class="nav__link nav__link--active" href="#">Components</a>
+            <a class="nav__link" href="#">About</a>
+            <a class="nav__link" href="#">Contact</a>
+          </nav>
+          <div class="header__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 1V3" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 21V23" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.22021 4.21997L5.64021 5.63997" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18.3599 18.36L19.7799 19.78" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1 12H3" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 12H23" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.22021 19.78L5.64021 18.36" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18.3599 5.63997L19.7799 4.21997" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          <label class="toggler toggler--template">
+            <input class="toggler__input" type="checkbox" tabindex="">
+            <div class="toggler__state toggler__state--template">
+              <div class="toggler__control toggler__control--grey">
+                <div class="toggler__icon toggler__icon--grey">
+                </div>
+              </div>
+            </div>
+          </label>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.9999 12.79C20.8426 14.4922 20.2038 16.1144 19.1581 17.4668C18.1125 18.8192 16.7034 19.8458 15.0956 20.4265C13.4878 21.0073 11.7479 21.1181 10.0794 20.7461C8.41092 20.3741 6.8829 19.5345 5.67413 18.3258C4.46536 17.117 3.62584 15.589 3.25381 13.9205C2.88178 12.252 2.99262 10.5121 3.57336 8.9043C4.15411 7.29651 5.18073 5.88737 6.53311 4.84175C7.8855 3.79614 9.5077 3.15731 11.2099 3C10.2133 4.34827 9.73375 6.00945 9.85843 7.68141C9.98312 9.35338 10.7038 10.9251 11.8893 12.1106C13.0748 13.2961 14.6465 14.0168 16.3185 14.1415C17.9905 14.2662 19.6516 13.7866 20.9999 12.79V12.79Z" stroke="#ACB5BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>            
+          </div>
+        </div>
+        </div>
     <h1 class="header__title">Reusable component library</h1>
   </div>
 </header>
@@ -22,37 +65,103 @@
      <div class="card__item">
        <div class="card__content">
         <div></div>
-        <div class="card__title">Tooltip</div>
+        <div class="card__main-title">
+          <div class="card__title">Tooltip</div>
+          <div class="card__suptitle">Container</div>
+        </div>
      </div>
     </div>
      <div class="card__item">
       <div class="card__content">
         <div></div>
-       <div class="card__title">Custom form elements</div>
+        <div class="card__main-title">
+          <div class="card__title">Custom form elements</div>
+          <div class="card__suptitle">Element</div>
+        </div>
      </div>
     </div>
     <div class="card__item">
       <div class="card__content">
-        <div></div>
-      <div class="card__title">Calendar</div>
+          <div class="calendar card-calendar calendar--card">
+            <div class="calendar__title calendar__title--card">October 2020</div>
+            <div class="calendar__wrapper">
+              <div class="calendar__inner">
+               <span class="calendar__item calendar__item--day calendar__item--day-card">Mon</span>
+               <span class="calendar__item calendar__item--day calendar__item--day-card">Tue</span>
+               <span class="calendar__item calendar__item--day calendar__item--day-card">Wed</span>
+               <span class="calendar__item calendar__item--day calendar__item--day-card">Thu</span>
+               <span class="calendar__item calendar__item--day calendar__item--day-card">Fri</span>
+               <span class="calendar__item calendar__item--day calendar__item--day-card">Sat</span>
+               <span class="calendar__item calendar__item--day calendar__item--day-card">Sun</span>
+               <span class="calendar__item calendar__item--card"></span>
+               <span class="calendar__item calendar__item--card"></span>
+               <span class="calendar__item calendar__item--card"></span>
+               <span class="calendar__item calendar__item--card"></span>
+               <span class="calendar__item calendar__item--card">1</span>
+               <span class="calendar__item calendar__item--card">2</span>
+               <span class="calendar__item calendar__item--card">3</span>
+               <span class="calendar__item calendar__item--card">4</span>
+               <span class="calendar__item calendar__item--card">5</span>
+               <span class="calendar__item calendar__item--card">6</span>
+               <span class="calendar__item calendar__item--card">7</span>
+               <span class="calendar__item calendar__item--card">8</span>
+               <span class="calendar__item calendar__item--card">9</span>
+               <span class="calendar__item calendar__item--card">10</span>
+               <span class="calendar__item calendar__item--card">11</span>
+               <span class="calendar__item calendar__item--card">12</span>
+               <span class="calendar__item calendar__item--card">13</span>
+               <span class="calendar__item calendar__item--card">14</span>
+               <span class="calendar__item calendar__item--card">15</span>
+               <span class="calendar__item calendar__item--card">16</span>
+               <span class="calendar__item calendar__item--card">17</span>
+               <span class="calendar__item calendar__item--active calendar__item--card calendar__item--active-card">18</span>
+               <span class="calendar__item calendar__item--between-active calendar__item--card calendar__item--between-active-card">19</span>
+               <span class="calendar__item calendar__item--between-active calendar__item--card calendar__item--between-active-card">20</span>
+               <span class="calendar__item calendar__item--between-active calendar__item--card calendar__item--between-active-card">21</span>
+               <span class="calendar__item calendar__item--between-active calendar__item--card calendar__item--between-active-card">22</span>
+               <span class="calendar__item calendar__item--active calendar__item--card calendar__item--active-card">23</span>
+               <span class="calendar__item calendar__item--card">24</span>
+               <span class="calendar__item calendar__item--numder calendar__item--card">25</span>
+               <span class="calendar__item calendar__item--numder calendar__item--card">26</span>
+               <span class="calendar__item calendar__item--numder calendar__item--card">27</span>
+               <span class="calendar__item calendar__item--numder calendar__item--card">28</span>
+               <span class="calendar__item calendar__item--numder calendar__item--card">29</span>
+               <span class="calendar__item calendar__item--numder calendar__item--card">30</span>
+               <span class="calendar__item calendar__item--numder calendar__item--card">31</span>
+              </div>
+            </div>
+           </div>
+        <div class="card__main-title">
+          <div class="card__title">Calendar</div>
+          <div class="card__suptitle">Container</div>
+        </div>
     </div>
    </div>
    <div class="card__item">
     <div class="card__content">
       <div></div>
-    <div class="card__title">Modal dialog</div>
+      <div class="card__main-title">
+        <div class="card__title">Modal dialog</div>
+        <div class="card__suptitle">Container</div>
+      </div>
   </div>
   </div>
   <div class="card__item">
     <div class="card__content">
       <div></div>
-    <div class="card__title">Histogram</div>
+      <div class="card__main-title">
+        <div class="card__title">Histogram</div>
+        <div class="card__suptitle">Container</div>
+      </div>
   </div>
   </div>
   <div class="card__item">
     <div class="card__content">
       <div></div>
-    <div class="card__title">Avatar</div>
+      <div class="card__main-title">
+        <div class="card__title">Avatar</div>
+        <div class="card__suptitle">Container</div>
+      </div>
   </div>
     </div>
   </div>

@@ -1,7 +1,30 @@
 /* Стилизация header*/
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+}
+
+.header__icon {
+  display: flex;
+  margin-left: 57px;
+
+}
 
 .header__title {
-  padding-top: 96px;
+  padding-top: 41px;
   padding-bottom: 77px;
   font-family: 'Inter', sans-serif;
   font-size: 50px;

@@ -68,3 +68,32 @@
   margin-bottom: 0;
 }
 
+.calendar--card {
+  width: 100%;
+  max-width: 202px;
+  padding: 15px 19px 10px;
+}
+
+.calendar__title--card {
+  margin-bottom: 15px;
+  
+  font-size: 13px;
+}
+
+.calendar__item--card {
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+.calendar__item--day-card {
+  margin-bottom: 15px;
+  font-size: 9px;
+}
+
+.calendar__item--active-card {
+  padding: 5px 6px;
+}
+
+.calendar__item--between-active-card {
+  padding: 5px 6px; 
+}
