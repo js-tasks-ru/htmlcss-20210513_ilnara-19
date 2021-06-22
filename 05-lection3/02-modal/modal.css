@@ -20,6 +20,7 @@
 }
 
 .modal__content {
+  width: 400px;
   padding: 30px 40px;
   border-radius: 8px;
   background-color: var(--white);
@@ -28,15 +29,6 @@
 
 .modal__header {
   position: relative;
-}
-
-.modal__title {
-  margin-bottom: 14px;
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 600;
-  color: var(--blue-1);
 }
 
 .modal__close {
@@ -50,10 +42,6 @@
   cursor: pointer;
 }
 
-.modal__text {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  color: var(--grey-4);
+.modal__input {
+  margin-bottom: 15px;
 }
