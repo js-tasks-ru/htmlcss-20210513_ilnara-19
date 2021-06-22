@@ -29,6 +29,10 @@
   transform: translate(-50%, 100%);
 }
 
+.tooltip__answer--opacity {
+  opacity: 1;
+}
+
 .tooltip__text {
   font-family: "Inter", san-serif;
   font-size: 16px;

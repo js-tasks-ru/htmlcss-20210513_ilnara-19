@@ -12,6 +12,14 @@
   display: none;
 }
 
+.modal--main-page { /* модификатор для модалки в карточке */
+  position: static;
+  top: none;
+  left: none;
+  z-index: none;
+  display: block;
+}
+
 .modal__inner {
   display: flex;
   justify-content: center;
@@ -23,7 +31,10 @@
   padding: 30px 40px;
   border-radius: 8px;
   background-color: var(--white);
+}
 
+.modal__content--padding { /* внутренний отступы для модалки в карточки */
+  padding: 15px 20px;
 }
 
 .modal__header {
@@ -56,4 +67,8 @@
   line-height: 1.5;
   font-weight: 400;
   color: var(--grey-4);
+}
+
+.modal__text--small { /* уменьшенный шрифт для текста в модалке */
+  font-size: 12px;
 }

@@ -15,12 +15,17 @@
 
 .header__menu {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__icon {
   display: flex;
   margin-left: 57px;
+}
 
+.header__toggler {
+  margin: 0 15px;
 }
 
 .header {
