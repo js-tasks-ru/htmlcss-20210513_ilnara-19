@@ -17,25 +17,26 @@
         </style>
     </head>
     <body>
-      <label class="radio">
+      <div class="radio-group">
+      <label class="radio radio-group__item">
         <input class="radio__input" type="radio" name="radio">
-        <div class="radio__state radio__state--margin">
+        <div class="radio__state">
           <div class="radio__control">
             <div class="radio__icon"></div>
           </div>
           <div class="radio__title">Default</div>
         </div>
         </label>
-        <label class="radio">
+        <label class="radio radio-group__item">
         <input class="radio__input" type="radio" name="radio">
-        <div class="radio__state radio__state--margin">
+        <div class="radio__state">
           <div class="radio__control">
             <div class="radio__icon"></div>
           </div>
           <div class="radio__title">Selected</div>
         </div>
       </label>
-      <label class="radio">
+      <label class="radio radio-group__item">
         <input class="radio__input" type="checkbox" name="radio" disabled>
         <div class="radio__state radio__state--disabled">
           <div class="radio__control radio__control--disabled">
@@ -43,6 +44,7 @@
           <div class="radio__title">Disabled</div>
         </div>
       </label>
+    </div>
       
     </body>
 </html>

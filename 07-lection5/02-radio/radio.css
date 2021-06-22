@@ -1,4 +1,13 @@
 /* Стилизация радио баттон */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-group__item + .radio-group__item {
+  margin-top: 16px;
+}
+
 .radio__input {
   width: 1px;
   height: 1px;
@@ -11,13 +20,7 @@
 .radio__state {
   display: flex;
   align-items: center;
-
   cursor: pointer;
-  
-}
-
-.radio__state--margin {
-  margin-bottom: 16px;
 }
 
 .radio__state--disabled {
