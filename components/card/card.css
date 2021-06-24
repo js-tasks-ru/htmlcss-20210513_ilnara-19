@@ -3,8 +3,11 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
-  padding-top: 65px;
-  padding-bottom: 174px;
+  padding: 65px 0;
+}
+
+.card__link {
+  display: block;
 }
 
 .card__item {

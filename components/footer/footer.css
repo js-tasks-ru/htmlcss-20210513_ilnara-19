@@ -1,7 +1,7 @@
 /* Стилизация footer */
-
 .footer {
-  padding: 71px 0 136px;
+  padding: 65px 0;
+  border-top: 1px solid var(--grey-2);
 }
 
 .footer__title {

@@ -68,32 +68,32 @@
   margin-bottom: 0;
 }
 
-.calendar--card {
+.calendar--preview {
   width: 100%;
   max-width: 202px;
   padding: 15px 19px 10px;
 }
 
-.calendar__title--card {
+.calendar__title--preview {
   margin-bottom: 15px;
   
   font-size: 13px;
 }
 
-.calendar__item--card {
+.calendar__item--preview {
   margin-bottom: 10px;
   font-size: 10px;
 }
 
-.calendar__item--day-card {
+.calendar__item--day-preview {
   margin-bottom: 15px;
   font-size: 9px;
 }
 
-.calendar__item--active-card {
+.calendar__item--active-preview {
   padding: 5px 6px;
 }
 
-.calendar__item--between-active-card {
+.calendar__item--between-active-preview {
   padding: 5px 6px; 
 }

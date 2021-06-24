@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 32px;
+  border-bottom: 1px solid var(--grey-2);
 }
 
 .header__inner {

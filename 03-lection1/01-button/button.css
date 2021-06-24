@@ -12,6 +12,10 @@
   text-align: center;
 }
 
+.btn-preview {
+  padding: 7px 25px;
+}
+
 .btn--disabled {
   opacity: 50%;
   pointer-events: none;

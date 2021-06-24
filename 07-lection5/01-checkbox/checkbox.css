@@ -1,4 +1,16 @@
 /* Стилизация чекбокса */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-group--preview {
+  margin-right: 16px;
+}
+
+.checkbox-group__item + .checkbox-group__item {
+ margin-top: 16px;
+}
 .checkbox__input {
   width: 1px;
   height: 1px;
@@ -13,7 +25,10 @@
   align-items: center;
 
   cursor: pointer;
-  margin-bottom: 16px;
+}
+
+.checkbox__state--preview {
+  cursor: default;
 }
 
 .checkbox__state--disabled {
