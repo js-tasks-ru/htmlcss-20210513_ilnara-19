@@ -4,8 +4,55 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./radio.css">
+        <style>
+          body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            max-width: 350px;
+            height: auto;
+            margin: 0 auto;
+          }
+          .radio-group {
+            display: flex;
+            flex-direction: column;
+          }
+          .radio-group__item + .radio-group__item {
+            margin-top: 16px;
+          }
+        </style>
     </head>
     <body>
-
+      <div class="radio-group">
+      <label class="radio radio-group__item">
+        <input class="radio__input" type="radio" name="radio">
+        <div class="radio__state">
+          <div class="radio__control">
+            <div class="radio__icon"></div>
+          </div>
+          <div class="radio__title">Default</div>
+        </div>
+        </label>
+        <label class="radio radio-group__item">
+        <input class="radio__input" type="radio" name="radio">
+        <div class="radio__state">
+          <div class="radio__control">
+            <div class="radio__icon"></div>
+          </div>
+          <div class="radio__title">Selected</div>
+        </div>
+      </label>
+      <label class="radio radio-group__item">
+        <input class="radio__input" type="checkbox" name="radio" disabled>
+        <div class="radio__state radio__state--disabled">
+          <div class="radio__control radio__control--disabled">
+          </div>
+          <div class="radio__title">Disabled</div>
+        </div>
+      </label>
+    </div>
+      
     </body>
 </html>
+   
