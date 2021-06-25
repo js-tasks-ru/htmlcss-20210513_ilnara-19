@@ -1,13 +1,4 @@
 /* Стилизация радио баттон */
-.radio-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.radio-group__item + .radio-group__item {
-  margin-top: 16px;
-}
-
 .radio__input {
   width: 1px;
   height: 1px;
