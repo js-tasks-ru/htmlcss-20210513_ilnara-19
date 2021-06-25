@@ -11,11 +11,13 @@
   border: 1px solid var(--grey-2);
   border-radius: 8px;
   outline: none;
-  appearance: none
+  appearance: none;
 }
 
 .input__state--preview {
   padding: 10px;
+  pointer-events: none;
+  box-shadow: -1px 1px 4px 0px rgba(221, 226, 229, 0.5);
 }
 
 .input__state--disabled {

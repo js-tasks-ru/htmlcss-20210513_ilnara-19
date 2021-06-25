@@ -1,0 +1,51 @@
+/* Стилизация табов */
+.tabs-group {
+  display: flex;
+}
+
+.tabs-group__item + .tabs-group__item {
+  margin-left: 40px;
+}
+
+
+
+.tab__input {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+  outline: none;
+  position: absolute;
+}
+
+.tab__title {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--grey-3);
+  transition: color .3s linear;
+}
+
+.tab__title::after {
+  content: '';
+  border: 1px solid #000;
+  transform: scale(0);
+  transition: scale 5s linear;
+
+}
+
+.tab__input:checked ~ .tab__title {
+  color: var(--black);
+}
+
+.tab__input:checked ~ .tab__title::after {
+  transform: scale(0.5);
+}
+
+#elements:checked ~ .card-group {
+  display: block;
+}
+

@@ -1,6 +1,13 @@
 /* Стилизация главного блока */
-
 .main {
+  background-color: var(--white);
+}
+
+.main__line {
+  border-top: 1px solid var(--grey-2);
+}
+
+.main__content {
   background-color: var(--grey-5);
 }
 
