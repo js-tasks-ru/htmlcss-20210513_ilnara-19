@@ -1,13 +1,13 @@
 /* Стилизация полей */
 .input {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
+  margin-bottom: 30px;
 }
 
 .input__state {
-  width: 100%;
-  padding: 17px 24px 13px;
+  padding: 1%;
   border: 1px solid var(--grey-2);
   border-radius: 8px;
   outline: none;
@@ -36,8 +36,10 @@
   margin-bottom: 5px;
   font-size: 12px;
   line-height: 1.5;
+  letter-spacing: 1px;
   font-weight: 500;
   color: var(--grey-3);
+  text-transform: uppercase;
 }
 
 .input__field {
@@ -56,6 +58,13 @@
   transform: translate(0, -50%);
   
   display: none;
+}
+
+.input__subtitle {
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--grey-3);
 }
 
 .input__icon--error {

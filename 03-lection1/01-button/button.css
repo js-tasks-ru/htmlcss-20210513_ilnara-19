@@ -1,7 +1,5 @@
 /* Стилизация кнопки */
-
 .btn {
-  padding: 15px 60px 14px;
   border: none;
   border-radius: 8px;
   font-family: 'Roboto', sans-serif;
@@ -14,11 +12,6 @@
 
 .btn-preview {
   padding: 7px 10px;
-}
-
-.btn--disabled {
-  opacity: 50%;
-  pointer-events: none;
 }
 
 .btn--primary {
@@ -39,6 +32,12 @@
   background-color: var(--purpleHover);
 }
 
+button[disabled] {
+  opacity: 50%;
+  pointer-events: none;
+  cursor: default;
+}
+
 .btn--alternate {
   background-color: var(--white);
   border: 1px solid var(--grey-3);
@@ -50,10 +49,22 @@
   border: 1px solid var(--black); 
 }
 
-.btn--disabled-alternate {
-  border: 1px solid var(--grey-3);
-  background-color: var(--white);
-  color: var(--grey-4);
-  opacity: .4;
-  pointer-events: none;
+.btn__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.17;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.btn__title--grey {
+  color: var(--grey-3); 
+}
+
+.btn--tab {
+  border-radius: 0;
+  cursor: default;
+  outline: none;
+  appearance: none;
+  background-color: var(--grey-5);
 }

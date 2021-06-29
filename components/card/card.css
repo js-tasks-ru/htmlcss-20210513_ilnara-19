@@ -1,11 +1,4 @@
 /* Стилизация карточек */
-.card-group {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px;
-  padding: 50px 0;
-}
-
 .card {
   width: calc(33.333333% - 30px);
   margin: 15px;
@@ -18,6 +11,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  cursor: pointer;
 }
 
 .card__content {

@@ -1,16 +1,4 @@
 /* Стилизация чекбокса */
-.checkbox-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.checkbox-group--preview {
-  margin-right: 16px;
-}
-
-.checkbox-group__item + .checkbox-group__item {
- margin-top: 16px;
-}
 .checkbox__input {
   width: 1px;
   height: 1px;
@@ -31,11 +19,6 @@
   cursor: default;
 }
 
-.checkbox__state--disabled {
-  opacity: .5;
-  pointer-events: none;
-}
-
 .checkbox__control {
   width: 28px;
   height: 28px;
@@ -43,10 +26,6 @@
   border-radius: 4px;
 
   position: relative;
-}
-
-.checkbox__control--disabled {
-  background-color: var(--grey-2);
 }
 
 .checkbox__icon {
@@ -69,6 +48,11 @@
   color: var(--grey-4);
 }
 
+label[disabled] {
+  pointer-events: none;
+  cursor: default;
+}
+
 .checkbox__input:checked ~ .checkbox__state .checkbox__control
 {
   background-color: var(--blue-2);
@@ -77,10 +61,6 @@
 
 .checkbox__input:checked ~ .checkbox__state .checkbox__icon {
   display: block;
-}
-
-.checkbox__input:focus ~ .checkbox__state .checkbox__title {
-  text-decoration: underline;
 }
 
 .checkbox__input:focus ~ .checkbox__state .checkbox__control {
