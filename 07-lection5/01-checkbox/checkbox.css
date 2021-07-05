@@ -15,10 +15,6 @@
   cursor: pointer;
 }
 
-.checkbox__state--preview {
-  cursor: default;
-}
-
 .checkbox__control {
   width: 28px;
   height: 28px;

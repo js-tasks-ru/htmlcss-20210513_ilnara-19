@@ -3,11 +3,15 @@
   display: inline-flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
-  margin-bottom: 30px;
+}
+
+.input--small {
+  width: 40%;
 }
 
 .input__state {
-  padding: 1%;
+  width: 100%;
+  padding: 15px 10px;
   border: 1px solid var(--grey-2);
   border-radius: 8px;
   outline: none;

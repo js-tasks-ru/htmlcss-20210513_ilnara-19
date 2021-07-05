@@ -74,26 +74,25 @@
   padding: 15px 19px 10px;
 }
 
-.calendar__title--preview {
+.calendar--preview .calendar__title {
   margin-bottom: 15px;
-  
   font-size: 13px;
 }
 
-.calendar__item--preview {
+.calendar--preview .calendar__item {
   margin-bottom: 10px;
   font-size: 10px;
 }
 
-.calendar__item--day-preview {
+.calendar--preview .calendar__item--day {
   margin-bottom: 15px;
   font-size: 9px;
 }
 
-.calendar__item--active-preview {
+.calendar--preview .calendar__item--active {
   padding: 5px 6px;
 }
 
-.calendar__item--between-active-preview {
+.calendar--preview .calendar__item--between-active {
   padding: 5px 6px; 
 }
