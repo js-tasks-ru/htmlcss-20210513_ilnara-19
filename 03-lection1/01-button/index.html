@@ -11,6 +11,32 @@
             align-items: center;
           }
 
+          .title-list {
+            display: inline-flex;
+            flex-direction: column;
+            width: 20%;
+            margin-right: 10px;
+          }
+
+          .title {
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 1.17;
+            font-weight: 500;
+            color: var(--black);
+          }
+
+          .title--grey {
+            color: var(--grey-3); 
+          }
+
+          .title--white {
+            background-color: var(--white);
+          }
+
           .btn-list {
             display: inline-flex;
             flex-direction: column;
@@ -25,21 +51,21 @@
     </head>
     <body>
       <div class="group">
-        <ul class="btn-list">
-          <li><label class="btn-label btn-list__item btn-label--white">DEFAULT</label></li>
-          <li><label class="btn-label btn-list__item btn-label--white">DISABLED</label></li>
+        <ul class="title-list">
+          <li><p class="title title-list__item title--white">DEFAULT</p></li>
+          <li><p class="title title-list__item title--white">DISABLED</p></li>
         </ul>
         <ul class="btn-list">
-          <li><button class="btn btn-list__item btn--primary" type="button">Primary</button></li>
-          <li><button class="btn btn-list__item btn--primary btn--disabled" type="button">Primary</button></li>
+          <li><button class="btn btn-list__item btn--primary btn--large" type="button">Primary</button></li>
+          <li><button class="btn btn-list__item btn--primary btn--disabled btn--large" type="button">Primary</button></li>
         </ul>
         <ul class="btn-list">
-          <li><button class="btn btn-list__item btn--secondary" type="button">Secondary</button></li>
-          <li><button class="btn btn-list__item btn--secondary btn--disabled" type="button">Secondary</button></li>
+          <li><button class="btn btn-list__item btn--secondary btn--large" type="button">Secondary</button></li>
+          <li><button class="btn btn-list__item btn--secondary btn--disabled btn--large" type="button">Secondary</button></li>
         </ul>
         <ul class="btn-list">
-          <li><button class="btn btn-list__item btn--alternate" type="button">Alternate</button></li>
-          <li><button class="btn btn-list__item btn--alternate btn--alternate-disabled" type="button">Alternate</button></li>
+          <li><button class="btn btn-list__item btn--alternate btn--large" type="button">Alternate</button></li>
+          <li><button class="btn btn-list__item btn--alternate btn--alternate-disabled btn--large" type="button">Alternate</button></li>
         </ul>
        </div>
     </body>

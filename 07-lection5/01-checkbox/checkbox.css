@@ -44,7 +44,7 @@
   color: var(--grey-4);
 }
 
-label[disabled] {
+.checkbox--disabled {
   pointer-events: none;
   cursor: default;
 }

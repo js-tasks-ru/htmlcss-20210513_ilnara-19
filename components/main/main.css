@@ -2,7 +2,3 @@
 .main {
   background-color: var(--white);
 }
-
-.main-group {
-  display: flex;
-}

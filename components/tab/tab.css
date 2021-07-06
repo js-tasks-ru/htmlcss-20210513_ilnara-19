@@ -1,5 +1,5 @@
 /* Стилизация табов */
-.tab__input {
+.tabs__input {
   width: 1px;
   height: 1px;
   opacity: 0;
@@ -8,11 +8,11 @@
   position: absolute;
 }
 
-.tab__menu {
+.tabs__menu {
   display: flex;
 }
 
-.tab__label {
+.tabs__label {
   display: flex;
   flex-direction: column;
   margin-right: 40px;
@@ -24,29 +24,29 @@
   transition: color .1s linear;
 }
 
-.tab__label::after {
+.tabs__label::after {
   content: '';
   border: 5px solid #000;
   transform: scale(0);
   transition: scale .2s linear;
 }
 
-.tab__line {
+.tabs__line {
   border-top: 1px solid var(--grey-2);
 }
 
-.tab__content {
+.tabs__content {
   padding: 50px 0;
   background-color: var(--grey-5);
 }
 
-.tab-list {
+.tabs__list {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
 }
 
-.tab__title {
+.tabs__title {
   margin: 50px 0;
   font-family: 'Inter', san-serif;
   font-size: 28px;
@@ -56,21 +56,36 @@
   color: var(--grey-3);
 }
 
-.tab__group-buttons {
+.tabs__title-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.17;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.tabs__title-button--grey {
+  color: var(--grey-3); 
+}
+
+.tabs__group-buttons {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(3, auto);
   gap: 30px;
 }
 
-.tab__custom-elements {
+.tabs__custom-elements {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
   gap: 30px;
 }
 
-.tab__input:hover ~ .container .tab__menu .tab__label {
+.tabs__input:hover ~ .container .tab__menu .tab__label {
   cursor: pointer;
 }
 

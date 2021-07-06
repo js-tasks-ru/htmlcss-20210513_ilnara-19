@@ -71,24 +71,24 @@
   </div> <!-- /container -->
       </header>
       <main class="main">
-        <div class="tab">
-          <input class="tab__input" type="radio" id="all-tabs" name="tab" checked>
-          <input class="tab__input" type="radio" id="elements" name="tab">
-          <input class="tab__input " type="radio" id="containers" name="tab">
-          <input class="tab__input" type="radio" id="templates" name="tab">
+        <div class="tabs">
+          <input class="tabs__input" type="radio" id="all-tabs" name="tab" checked>
+          <input class="tabs__input" type="radio" id="elements" name="tab">
+          <input class="tabs__input " type="radio" id="containers" name="tab">
+          <input class="tabs__input" type="radio" id="templates" name="tab">
           <div class="container">
-            <div class="tab__menu">
-              <label class="tab__label" for="all-tabs">All components</label>
-              <label class="tab__label" for="elements">Elements</label>
-              <label class="tab__label" for="containers">Containers</label>
-              <label class="tab__label" for="templates">Templates</label>
+            <div class="tabs__menu">
+              <label class="tabs__label" for="all-tabs">All components</label>
+              <label class="tabs__label" for="elements">Elements</label>
+              <label class="tabs__label" for="containers">Containers</label>
+              <label class="tabs__label" for="templates">Templates</label>
             </div>
           </div>
-         <div class="tab__line"></div>
-         <div class="tab__content tab__content--all-tabs">
+         <div class="tabs__line"></div>
+         <div class="tabs__content tab__content--all-tabs">
          <div class="container">
          <!-- Карточки -->
-           <div class="tab-list"> 
+           <div class="tabs__list"> 
             <a class="card">
               <div class="card__content">
                 <div class="tooltip card__tooltip">
@@ -313,9 +313,9 @@
            </div> <!-- /tab-list -->
          </div> <!--/ container -->
          </div> <!-- /tab__content tab__content--all-tabs -->
-        <div class="tab__content tab__content--elements">
+        <div class="tabs__content tabs__content--elements">
          <div class="container">
-          <div class="tab-list">
+          <div class="tabs__list">
             <a class="card">
               <div class="card__content">
                 <div class="group-elements"> <!--для задания внешнего поведения чекбоксов лучше блок задать или элемет??-->
@@ -393,18 +393,18 @@
               </div>
             </a> <!-- /card -->
           </div> <!-- / tab-list -->
-          <h3 class="tab__title">BUTTONS</h3>
-          <div class="tab__group-buttons">
-            <label class="btn-label">Button</label>
+          <h3 class="tabs__title">BUTTONS</h3>
+          <div class="tabs__group-buttons">
+            <p class="tabs__title-button">Button</p>
             <button class="btn btn--primary btn--not-padding" type="button">Primary</button>
             <button class="btn btn--secondary btn--not-padding" type="button">Secondary</button>
             <button class="btn btn--alternate btn--not-padding" type="button">Alternate</button>
-            <label class="btn-label btn-label--grey">Button disabled</label>
+            <p class="tabs__title-button tabs__title-button--grey">Button disabled</p>
             <button class="btn btn--primary btn--disabled btn--not-padding" type="button">Primary</button>
             <button class="btn btn--secondary btn--disabled btn--not-padding" type="button">Secondary</button>
             <button class="btn btn--alternate btn--alternate-disabled btn--not-padding" type="button">Alternate</button>
           </div>
-          <h3 class="tab__title">CUSTOM FORM ELEMENTS</h3>
+          <h3 class="tabs__title">CUSTOM FORM ELEMENTS</h3>
           <div class="input input--small">
             <label class="input__title">LABEL</label>
             <input class="input__state " type="text">
@@ -433,7 +433,7 @@
           
          </div> <!-- /container -->
         </div> <!-- /tab__content tab__content--elements -->
-        <div class="tab__content tab__content--container">
+        <div class="tabs__content tabs__content--container">
           <div class="container">
             <div class="tab-list">
               <a class="card">
@@ -610,10 +610,10 @@
           </label>
         </div> <!-- /tab__custom-elements -->
       </div>
-    </div>
-    <div class="tab__content tab__content--template">
+        </div>
+        <div class="tabs__content tabs__content--template">
       <div class="container">
-        <div class="tab-list">
+        <div class="tabs__list">
           <a class="card">
             <div class="card__content">
               <div class="histogram">
@@ -687,7 +687,7 @@
             </div>
           </a> <!-- /card -->
         </div> <!-- /tab-list -->
-        <h3 class="tab__title">Modal</h3>
+        <h3 class="tabs__title">Modal</h3>
           <button id="modal-open" class="btn btn--primary btn--small">Open modal</button>
             <div id="modal" class="modal">
               <div class="modal__inner">
@@ -709,7 +709,7 @@
                 </div>
               </div>
             </div>
-            <h3 class="tab__title">ACCORDION</h3>
+            <h3 class="tabs__title">ACCORDION</h3>
               <div class="accordion">
                 <details class="accordion__item">
                   <summary class="accordion__header">
