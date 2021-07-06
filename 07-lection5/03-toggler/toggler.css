@@ -15,10 +15,6 @@
   cursor: pointer;
 }
 
-.toggler__state--margin {
-  margin-bottom: 16px;
-}
-
 .toggler__state--disabled {
   opacity: .5;
   pointer-events: none;
@@ -33,14 +29,6 @@
   position: relative;
 }
 
-.toggler__control--grey {
-  border: 1px solid var(--grey-3);
-}
-
-.toggler__control--disabled {
-  background-color: var(--grey-2);
-}
-
 .toggler__icon {
   width: 24px;
   height: 24px;
@@ -52,14 +40,6 @@
   transform: translate(-100%, -50%);
 }
 
-.toggler__icon--grey {
-  background-color: var(--grey-3); 
-}
-
-.toggler__icon--disabled {
-  background-color: var(--grey-3);
-}
-
 .toggler__title {
   margin-left: 12px;
   font-family: "Inter", sans-serif;
@@ -67,6 +47,11 @@
   line-height: 1.5;
   font-weight: 400;
   color: var(--grey-4);
+}
+
+.toggler--disabled {
+  pointer-events: none;
+  cursor: default;
 }
 
 .toggler__input:checked ~ .toggler__state .toggler__control {
@@ -77,10 +62,6 @@
 .toggler__input:checked ~ .toggler__state .toggler__icon {
   background-color: var(--white);
   transform: translate(0, -50%);
-}
-
-.toggler__input:focus ~ .toggler__state .toggler__title {
-  text-decoration: underline;
 }
 
 .toggler__input:focus ~ .toggler__state .toggler__control {

@@ -1,10 +1,13 @@
 /* Стилизация скелетона */ 
-
 .skeleton {
   width: 100%;
   padding: 24px 40px 32px 24px;
   border: 1px solid var(--grey-3);
   border-radius: 8px;
+}
+
+.skeleton--middle {
+  width: 50%;
 }
 
 .skeleton__header {
