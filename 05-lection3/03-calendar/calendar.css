@@ -68,3 +68,31 @@
   margin-bottom: 0;
 }
 
+.calendar--preview {
+  width: 100%;
+  max-width: 202px;
+  padding: 15px 19px 10px;
+}
+
+.calendar--preview .calendar__title {
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.calendar--preview .calendar__item {
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+.calendar--preview .calendar__item--day {
+  margin-bottom: 15px;
+  font-size: 9px;
+}
+
+.calendar--preview .calendar__item--active {
+  padding: 5px 6px;
+}
+
+.calendar--preview .calendar__item--between-active {
+  padding: 5px 6px; 
+}

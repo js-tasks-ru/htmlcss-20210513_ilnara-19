@@ -15,6 +15,15 @@
             height: auto;
             margin: 0 auto;
           }
+
+          .checkbox-group {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .checkbox-group__item + .checkbox-group__item {
+            margin-top: 16px;
+          }
         </style>
     </head>
     <body>
@@ -27,8 +36,8 @@
          </symbol>
         </defs>
       </svg>
-        
-      <label class="checkbox">
+      <div class="checkbox-group">
+      <label class="checkbox checkbox-group__item">
         <input class="checkbox__input" type="checkbox" tabindex="">
         <div class="checkbox__state">
           <div class="checkbox__control">
@@ -39,7 +48,7 @@
           <div class="checkbox__title">Default</div>
         </div>
       </label>
-      <label class="checkbox">
+      <label class="checkbox checkbox-group__item">
         <input class="checkbox__input" type="checkbox" tabindex="">
         <div class="checkbox__state">
           <div class="checkbox__control">
@@ -50,10 +59,10 @@
           <div class="checkbox__title">Checked</div>
         </div>
       </label>
-      <label class="checkbox">
+      <label class="checkbox checkbox--disabled checkbox-group__item">
         <input class="checkbox__input" type="checkbox" disabled>
-        <div class="checkbox__state checkbox__state--disabled">
-          <div class="checkbox__control checkbox__control--disabled">
+        <div class="checkbox__state">
+          <div class="checkbox__control">
             <svg class="checkbox__icon">
               <use xlink:href="#checkbox"></use>
             </svg>
@@ -61,6 +70,7 @@
           <div class="checkbox__title">Disabled</div>
         </div>
       </label>
+    </div>
       
     </body>
 </html>

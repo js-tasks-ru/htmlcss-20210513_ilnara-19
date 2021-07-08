@@ -1,5 +1,4 @@
 /* Стилизация аватара*/
-
 .avatar {
   border-radius: 50%;
   object-fit: cover;
@@ -10,8 +9,13 @@
   height: 102px;
 }
 
-/*.avatar--skeleton {
+.avatar--skeleton {
   width: 64px;
   height: 64px;
   background-color: var(#DDE2E5);
-}*/
+}
+
+.avatar--large {
+  width: 160px;
+  height: 160px;
+}

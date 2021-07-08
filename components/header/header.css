@@ -1,4 +1,42 @@
 /* Стилизация header*/
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 110px;
+  height: 32px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__control {
+  display: flex;
+  margin-left: 57px;
+}
+
+.header__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.header__toggler {
+  margin: 0 15px;
+}
 
 .header {
   background-color: var(--white);
@@ -9,7 +47,7 @@
 }
 
 .header__title {
-  padding-top: 96px;
+  padding-top: 41px;
   padding-bottom: 77px;
   font-family: 'Inter', sans-serif;
   font-size: 50px;
