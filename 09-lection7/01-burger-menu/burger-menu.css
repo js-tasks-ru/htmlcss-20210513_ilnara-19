@@ -1,0 +1,89 @@
+/* Стилизация мобильного меню */
+.burger {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 16px;
+  background-color: var(--grey-5);
+}
+
+.burger__icon {
+  display: block;
+  width: 22px;
+  border: 2px solid var(--grey-4);
+  border-radius: 8px;
+  cursor: pointer;
+
+  position: relative;
+}
+
+.burger__icon::before,
+.burger__icon::after {
+  content: '';
+  display: block;
+  width: 22px;
+  border: 2px solid var(--grey-4);
+  border-radius: 8px;
+
+  position: absolute;
+}
+
+.burger__icon::before {
+  top: -10px;
+  left: -2px;
+  transition: transform .1s linear;
+}
+
+.burger__icon::after {
+  left: -2px;
+  bottom: -10px;
+  transition: transform .1s linear;
+}
+
+.active {
+  border: none;
+  
+}
+
+.active::before {
+  top: -2px;
+  left: -2px;
+  transform: rotate(45deg);
+  transition: transform .1s linear;
+}
+
+.active::after {
+  bottom: -2px;
+  left: -2px;
+  transform: rotate(-45deg);
+  transition: transform .1s linear;
+  
+}
+
+.burger__line {
+  width: 100%;
+  margin: 24px 0;
+  border: 1px solid var(--grey-2);
+}
+
+.burger__menu {
+  display: none;
+}
+
+div [data-open] {
+  display: block;
+}
+
+.burger__night-theme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger__title {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--grey-4);
+}
