@@ -11,6 +11,7 @@
 .burger__icon {
   display: block;
   width: 22px;
+  margin-bottom: 16px;
   border: 2px solid var(--grey-4);
   border-radius: 8px;
   cursor: pointer;
@@ -43,7 +44,6 @@
 
 .active {
   border: none;
-  
 }
 
 .active::before {
@@ -58,7 +58,6 @@
   left: -2px;
   transform: rotate(-45deg);
   transition: transform .1s linear;
-  
 }
 
 .burger__line {
