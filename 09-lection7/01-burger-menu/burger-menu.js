@@ -1,11 +1,12 @@
 const menu = document.getElementById('burger-menu');
 const menuClose = document.getElementById('burger-menu-close');
 const menuOpen = document.getElementById('burger-menu-open');
+const menuIcon = document.getElementById('burger-menu-open-icon');
 
 if (menuOpen) {
   menuOpen.addEventListener('click', function() {
       if (menuOpen) {
-        menuOpen.classList.add('active');
+        menuIcon.classList.add('active');
       }
   });
 }
@@ -21,7 +22,7 @@ if (menuOpen) {
 if (menuClose) {
   menuClose.addEventListener('click', function() {
       if (menuOpen) {
-        menuOpen.classList.remove('active');
+        menuIcon.classList.remove('active');
       }
   });
 }
