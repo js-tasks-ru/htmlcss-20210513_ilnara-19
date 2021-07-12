@@ -9,53 +9,59 @@
 }
 
 .burger__icon {
-  display: block;
-  width: 22px;
-  margin-bottom: 16px;
-  border: 2px solid var(--grey-4);
-  border-radius: 8px;
+  width: 40px; 
+  padding: 20px 0;
+  
+  border: none;
+  outline: none;
+  color: transparent;
+  background: none;
   cursor: pointer;
-
   position: relative;
 }
 
-.burger__icon::before,
-.burger__icon::after {
-  content: '';
+.burger__icon-line {
   display: block;
-  width: 22px;
+  width: 24px; 
+  border: 2px solid var(--grey-4);
+  border-radius: 8px;
+  
+  position: absolute;
+  left: 0;
+}
+
+.burger__icon-line::before,
+.burger__icon-line::after {
+  content: '';
+  width: 24px; 
   border: 2px solid var(--grey-4);
   border-radius: 8px;
 
   position: absolute;
+  left: -2px;
+  z-index: 1;
 }
 
-.burger__icon::before {
-  top: -10px;
-  left: -2px;
-  transition: transform .1s linear;
+.burger__icon-line::before {
+  top: 6px;
 }
 
-.burger__icon::after {
-  left: -2px;
-  bottom: -10px;
-  transition: transform .1s linear;
+.burger__icon-line::after {
+  bottom: 6px;
 }
 
 .active {
-  border: none;
+ border: none;
 }
 
 .active::before {
   top: -2px;
-  left: -2px;
   transform: rotate(45deg);
   transition: transform .1s linear;
 }
 
 .active::after {
-  bottom: -2px;
-  left: -2px;
+  top: -2px;
   transform: rotate(-45deg);
   transition: transform .1s linear;
 }

@@ -26,7 +26,6 @@ if (menuClose) {
   });
 }
 
-
 if (menuClose) {
     menuClose.addEventListener('click', function() {
         if (menu) {
