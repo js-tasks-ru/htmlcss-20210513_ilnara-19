@@ -6,18 +6,23 @@
   min-height: 100vh;
   padding: 16px;
   background-color: var(--grey-5);
+
+  position: fixed;
 }
 
 .burger__icon {
   width: 40px; 
   padding: 20px 0;
-  
   border: none;
-  outline: none;
   color: transparent;
   background: none;
   cursor: pointer;
+  
   position: relative;
+}
+
+.burger__icon:focus {
+  outline: none;
 }
 
 .burger__icon-line {
@@ -50,7 +55,7 @@
   bottom: 6px;
 }
 
-.active {
+.burger__active {
  border: none;
 }
 
@@ -76,7 +81,7 @@
   display: none;
 }
 
-div [data-open] {
+.burger[data-open] {
   display: block;
 }
 
