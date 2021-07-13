@@ -7,7 +7,7 @@
   padding: 16px;
   background-color: var(--grey-5);
 
-  position: fixed;
+  /*position: fixed;*/
 }
 
 .burger__icon {
@@ -17,7 +17,7 @@
   color: transparent;
   background: none;
   cursor: pointer;
-  
+
   position: relative;
 }
 
@@ -59,13 +59,13 @@
  border: none;
 }
 
-.active::before {
+.burger__active::before {
   top: -2px;
   transform: rotate(45deg);
   transition: transform .1s linear;
 }
 
-.active::after {
+.burger__active::after {
   top: -2px;
   transform: rotate(-45deg);
   transition: transform .1s linear;
@@ -81,7 +81,7 @@
   display: none;
 }
 
-.burger[data-open] {
+.burger__menu[data-open] {
   display: block;
 }
 
