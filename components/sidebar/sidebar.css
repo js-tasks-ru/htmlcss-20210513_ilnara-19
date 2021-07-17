@@ -5,6 +5,10 @@
   margin-bottom: 32px;
 }
 
+.sidebar__title--grey {
+  color: var(--grey-3);
+}
+
 .sidebar__title {
   margin-bottom: 16px;
   font-family: 'Inter', sans-serif;

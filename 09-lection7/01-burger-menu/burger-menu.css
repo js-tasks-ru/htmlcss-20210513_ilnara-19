@@ -1,0 +1,61 @@
+/* Стилизация мобильного меню */
+.burger {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 16px;
+  background-color: var(--grey-5);
+  
+  position: fixed;
+}
+
+.burger__icon {
+ width: 24px;
+ height: 24px;
+ cursor: pointer;
+}
+
+.burger__icon-close {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1;
+
+  display: none;
+}
+
+.burger__active {
+  display: block;
+}
+
+.burger__no-active {
+  display: none;
+}
+
+.burger__line {
+  width: 100%;
+  margin: 24px 0;
+  border: 1px solid var(--grey-2);
+}
+
+.burger__menu {
+  display: none;
+}
+
+.burger__menu[data-open] {
+  display: block;
+}
+
+.burger__night-theme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger__title {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--grey-4);
+}
