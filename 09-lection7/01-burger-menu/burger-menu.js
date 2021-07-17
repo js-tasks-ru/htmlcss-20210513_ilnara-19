@@ -5,24 +5,24 @@ const menuIcon = document.getElementById('burger-menu-open-icon');
 
 if (menuOpen) {
   menuOpen.addEventListener('click', function() {
-      if (menuOpen) {
-        menuIcon.classList.add('burger__active');
-      }
-  });
-}
-
-if (menuOpen) {
-  menuOpen.addEventListener('click', function() {
       if (menu) {
           menu.setAttribute('data-open', '');
       }
   });
 }
 
-if (menuClose) {
-  menuClose.addEventListener('click', function() {
+if (menuOpen) {
+  menuOpen.addEventListener('click', function() {
       if (menuOpen) {
-        menuIcon.classList.remove('burger__active');
+          menuOpen.classList.add('burger__no-active');
+      }
+  });
+}
+
+if (menuOpen) {
+  menuOpen.addEventListener('click', function() {
+      if (menuClose) {
+          menuClose.classList.add('burger__active');
       }
   });
 }
@@ -33,6 +33,22 @@ if (menuClose) {
             menu.removeAttribute('data-open');
         }
     });
+}
+
+if (menuClose) {
+  menuClose.addEventListener('click', function() {
+      if (menuOpen) {
+          menuOpen.classList.remove('burger__no-active');
+      }
+  });
+}
+
+if (menuClose) {
+  menuClose.addEventListener('click', function() {
+      if (menuClose){
+          menuClose.classList.remove('burger__active');
+      }
+  });
 }
 
 

@@ -6,69 +6,31 @@
   min-height: 100vh;
   padding: 16px;
   background-color: var(--grey-5);
-
-  /*position: fixed;*/
+  
+  position: fixed;
 }
 
 .burger__icon {
-  width: 40px; 
-  padding: 20px 0;
-  border: none;
-  color: transparent;
-  background: none;
-  cursor: pointer;
-
-  position: relative;
+ width: 24px;
+ height: 24px;
+ cursor: pointer;
 }
 
-.burger__icon:focus {
-  outline: none;
-}
-
-.burger__icon-line {
-  display: block;
-  width: 24px; 
-  border: 2px solid var(--grey-4);
-  border-radius: 8px;
-  
+.burger__icon-close {
   position: absolute;
-  left: 0;
-}
-
-.burger__icon-line::before,
-.burger__icon-line::after {
-  content: '';
-  width: 24px; 
-  border: 2px solid var(--grey-4);
-  border-radius: 8px;
-
-  position: absolute;
-  left: -2px;
+  top: 15px;
+  left: 15px;
   z-index: 1;
-}
 
-.burger__icon-line::before {
-  top: 6px;
-}
-
-.burger__icon-line::after {
-  bottom: 6px;
+  display: none;
 }
 
 .burger__active {
- border: none;
+  display: block;
 }
 
-.burger__active::before {
-  top: -2px;
-  transform: rotate(45deg);
-  transition: transform .1s linear;
-}
-
-.burger__active::after {
-  top: -2px;
-  transform: rotate(-45deg);
-  transition: transform .1s linear;
+.burger__no-active {
+  display: none;
 }
 
 .burger__line {
