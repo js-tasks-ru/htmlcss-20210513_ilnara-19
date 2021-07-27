@@ -66,3 +66,19 @@
   cursor: default;
 }
 
+/* Media query */
+
+@media (max-width: 768px) {
+
+  .btn--small {
+    width: auto;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .btn--small {
+    width: auto;
+  }
+}
+

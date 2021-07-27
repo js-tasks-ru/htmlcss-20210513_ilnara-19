@@ -1,5 +1,6 @@
 /* Стилизация полей */
 .input {
+  width: 100%;
   display: inline-flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
@@ -93,5 +94,16 @@
 
 .input__state--invalid:focus {
   border: 1px solid var(--red);
+}
+
+@media (max-width: 575px) {
+  
+  .input {
+    margin-bottom: 10px;
+  }
+
+  .input--small {
+    width: inherit;
+  }
 }
 

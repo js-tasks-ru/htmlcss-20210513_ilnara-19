@@ -20,6 +20,7 @@
   color: var(--black);
   opacity: 80%;
 }
+
 .histogram__link {
   font-size: 16px;
   line-height: 1.5;
@@ -30,7 +31,6 @@
 .histogram__link:hover {
   text-decoration: underline;
 }
-
 
 .histogram__title {
   margin-bottom: 40px;
