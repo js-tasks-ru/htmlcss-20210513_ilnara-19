@@ -41,3 +41,15 @@
   color: var(--grey-4);
   text-align: center;
 }
+
+html[data-theme-dark] .card {
+  background-color: var(--black);
+}
+
+html[data-theme-dark] .card__title {
+  color: var(--grey-3);
+}
+
+html[data-theme-dark] .card__suptitle {
+  color: var(--grey-3);
+}

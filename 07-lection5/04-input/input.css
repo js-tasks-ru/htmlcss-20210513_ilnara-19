@@ -1,12 +1,17 @@
 /* Стилизация полей */
 .input {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
 }
 
 .input--small {
+  display: inline-block;
   width: 40%;
+}
+
+.input--middle {
+  width: 50%;
 }
 
 .input__state {
@@ -93,5 +98,14 @@
 
 .input__state--invalid:focus {
   border: 1px solid var(--red);
+}
+
+html[data-theme-dark] .input__state {
+  background-color: var(--black);
+}
+
+html[data-theme-dark] .input__state--preview {
+  box-shadow: none;
+  border: 1px solid var(--white);
 }
 

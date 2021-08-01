@@ -31,7 +31,6 @@
   text-decoration: underline;
 }
 
-
 .histogram__title {
   margin-bottom: 40px;
   font-size: 20px;
@@ -133,4 +132,12 @@
 
 .histogram__item--17 {
   height: 45%;
+}
+
+html[data-theme-dark] .histogram__text {
+  color: var(--grey-3);
+}
+
+html[data-theme-dark] .histogram__title {
+  color: var(--grey-3);
 }

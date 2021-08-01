@@ -22,3 +22,11 @@
   color: var(--black);
   text-align: center;
 }
+
+html[data-theme-dark] .footer__title {
+  color: var(--grey-3);
+}
+
+html[data-theme-dark] .footer__text {
+  color: var(--grey-3);
+}

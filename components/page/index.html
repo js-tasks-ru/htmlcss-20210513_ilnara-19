@@ -40,13 +40,15 @@
       <header class="header">
   <div class="container">
     <div class="header__inner">
+      <a href="#">
       <svg class="header__logo">
         <use xlink:href="../sprite/sprite.svg#logo"></use>
       </svg>
+    </a>
       <div class="header__menu">
         <nav class="nav">
-          <a class="nav__link nav__link--active" href="#">Components</a>
-          <a class="nav__link" href="#">About</a>
+          <a class="nav__link nav__link--active" href="#tabs__content">Components</a>
+          <a class="nav__link" href="#footer">About</a>
           <a class="nav__link" href="#">Contact</a>
         </nav>
         <div class="header__control">
@@ -54,7 +56,7 @@
             <use xlink:href="../sprite/sprite.svg#sun"></use>
           </svg>
           <label class="toggler header__toggler">
-            <input class="toggler__input" type="checkbox" tabindex="">
+            <input class="toggler__input" type="checkbox" id="theme-changer">
             <div class="toggler__state">
               <div class="toggler__control toggler__control--grey">
                 <div class="toggler__icon toggler__icon--grey"></div>
@@ -72,24 +74,24 @@
       </header>
       <main class="main">
         <div class="tabs">
-          <input class="tabs__input" type="radio" id="all-tabs" name="tab" checked>
-          <input class="tabs__input" type="radio" id="elements" name="tab">
-          <input class="tabs__input " type="radio" id="containers" name="tab">
-          <input class="tabs__input" type="radio" id="templates" name="tab">
+          <input class="tabs__input" type="radio" id="tab-1" name="tab" checked>
+          <input class="tabs__input" type="radio" id="tab-2" name="tab">
+          <input class="tabs__input " type="radio" id="tab-3" name="tab">
+          <input class="tabs__input" type="radio" id="tab-4" name="tab">
           <div class="container">
             <div class="tabs__menu">
-              <label class="tabs__label" for="all-tabs">All components</label>
-              <label class="tabs__label" for="elements">Elements</label>
-              <label class="tabs__label" for="containers">Containers</label>
-              <label class="tabs__label" for="templates">Templates</label>
+              <label class="tabs__label" for="tab-1">All components</label>
+              <label class="tabs__label" for="tab-2">Elements</label>
+              <label class="tabs__label" for="tab-3">Containers</label>
+              <label class="tabs__label" for="tab-4">Templates</label>
             </div>
           </div>
          <div class="tabs__line"></div>
-         <div class="tabs__content tab__content--all-tabs">
+         <div id="tabs__content" class="tabs__content tabs__content--tab-1">
          <div class="container">
          <!-- Карточки -->
            <div class="tabs__list"> 
-            <a class="card">
+            <a class="card" href="../../pages/tooltip-page/template.html">
               <div class="card__content">
                 <div class="tooltip card__tooltip">
                   <svg class="tooltip__question">
@@ -105,7 +107,7 @@
                 <h5 class="card__suptitle">Container</h5>
               </div>
             </a> <!-- /card -->
-            <a class="card">
+            <a class="card" href="../../pages/element-page/template.html">
               <div class="card__content">
                 <div class="group-elements">
                   <label class="checkbox group-elements__item">
@@ -172,7 +174,7 @@
                 <h5 class="card__suptitle">Element</h5>
               </div>
             </a> <!-- /card -->
-            <a class="card">
+            <a class="card" href="../../pages/calendar-page/template.html">
               <div class="card__content">
                 <div class="calendar calendar--preview">
                   <div class="calendar__title">October 2020</div>
@@ -213,13 +215,13 @@
                       <span class="calendar__item calendar__item--between-active">22</span>
                       <span class="calendar__item calendar__item--active">23</span>
                       <span class="calendar__item">24</span>
-                      <span class="calendar__item calendar__item--numder">25</span>
-                      <span class="calendar__item calendar__item--numder">26</span>
-                      <span class="calendar__item calendar__item--numder">27</span>
-                      <span class="calendar__item calendar__item--numderw">28</span>
-                      <span class="calendar__item calendar__item--numder">29</span>
-                      <span class="calendar__item calendar__item--numder">30</span>
-                      <span class="calendar__item calendar__item--numder">31</span>
+                      <span class="calendar__item calendar__item--number">25</span>
+                      <span class="calendar__item calendar__item--number">26</span>
+                      <span class="calendar__item calendar__item--number">27</span>
+                      <span class="calendar__item calendar__item--number">28</span>
+                      <span class="calendar__item calendar__item--number">29</span>
+                      <span class="calendar__item calendar__item--number">30</span>
+                      <span class="calendar__item calendar__item--number">31</span>
                     </div>
                   </div> <!-- /calendar__wrapper -->
                 </div> <!-- /calendar -->
@@ -229,7 +231,7 @@
                 <h5 class="card__suptitle">Container</h5>
               </div>
             </a> <!-- /card -->
-            <a class="card">
+            <a class="card" href="../../pages/histogram-page/template.html">
               <div class="card__content">
                 <div class="histogram">
                   <div class="histogram__header">
@@ -276,7 +278,7 @@
                 <h5 class="card__suptitle">Element</h5>
               </div>
             </a> <!-- /card -->
-            <a class="card">
+            <a class="card" href="../../pages/modal-page/template.html">
               <div class="card__content">
                 <div class="modal modal--preview">
                   <div class="modal__inner">
@@ -301,7 +303,7 @@
                 <h5 class="card__suptitle">Container</h5>
               </div>
             </a> <!-- /card -->
-            <a class="card">
+            <a class="card" href="../../pages/avatar-page/template.html">
               <div class="card__content">
                 <img class="avatar avatar--large" src="../../06-lection4/01-avatar/public/avatar-200.jpg" alt="avatar">
               </div>
@@ -313,10 +315,10 @@
            </div> <!-- /tab-list -->
          </div> <!--/ container -->
          </div> <!-- /tab__content tab__content--all-tabs -->
-        <div class="tabs__content tabs__content--elements">
+        <div class="tabs__content tabs__content--tab-2">
          <div class="container">
           <div class="tabs__list">
-            <a class="card">
+            <a class="card" href="../../pages/element-page/template.html">
               <div class="card__content">
                 <div class="group-elements"> <!--для задания внешнего поведения чекбоксов лучше блок задать или элемет??-->
                   <label class="checkbox group-elements__item">
@@ -383,7 +385,7 @@
                 <h5 class="card__suptitle">Element</h5>
               </div>
             </a> <!-- /card -->
-            <a class="card">
+            <a class="card" href="../../pages/avatar-page/template.html">
               <div class="card__content">
                 <img class="avatar avatar--large" src="../../06-lection4/01-avatar/public/avatar-200.jpg" alt="avatar">
               </div>
@@ -433,10 +435,10 @@
           
          </div> <!-- /container -->
         </div> <!-- /tab__content tab__content--elements -->
-        <div class="tabs__content tabs__content--container">
+        <div class="tabs__content tabs__content--tab-3">
           <div class="container">
-            <div class="tab-list">
-              <a class="card">
+            <div class="tabs__list">
+              <a class="card" href="../../pages/tooltip-page/template.html">
                 <div class="card__content">
                   <div class="tooltip card__tooltip">
                     <svg class="tooltip__question">
@@ -452,7 +454,7 @@
                  <h5 class="card__suptitle">Container</h5>
                 </div>
               </a> <!-- /card -->
-              <a class="card">
+              <a class="card" href="../../pages/calendar-page/template.html">
                 <div class="card__content">
                   <div class="calendar calendar--preview">
                     <div class="calendar__title calendar__title--preview">October 2020</div>
@@ -493,13 +495,13 @@
                         <span class="calendar__item calendar__item--between-active">22</span>
                         <span class="calendar__item calendar__item--active ">23</span>
                         <span class="calendar__item">24</span>
-                        <span class="calendar__item calendar__item--numder">25</span>
-                        <span class="calendar__item calendar__item--numder">26</span>
-                        <span class="calendar__item calendar__item--numder">27</span>
-                        <span class="calendar__item calendar__item--numder">28</span>
-                        <span class="calendar__item calendar__item--numder">29</span>
-                        <span class="calendar__item calendar__item--numder">30</span>
-                        <span class="calendar__item calendar__item--numder">31</span>
+                        <span class="calendar__item calendar__item--number">25</span>
+                        <span class="calendar__item calendar__item--number">26</span>
+                        <span class="calendar__item calendar__item--number">27</span>
+                        <span class="calendar__item calendar__item--number">28</span>
+                        <span class="calendar__item calendar__item--number">29</span>
+                        <span class="calendar__item calendar__item--number">30</span>
+                        <span class="calendar__item calendar__item--number">31</span>
                       </div>
                     </div> <!-- /calendar__wrapper -->
                   </div> <!-- /calendar -->
@@ -510,7 +512,7 @@
                 </div>
               </a> <!-- /card -->
             </div>
-            <h3 class="tab__title">SKELETON</h3>
+            <h3 class="tabs__title">SKELETON</h3>
               <div class="skeleton skeleton--middle">
                 <div class="skeleton__header">
                   <div class="skeleton__avatar"></div>
@@ -524,8 +526,8 @@
                  <div class="skeleton__line"></div>
                 </div>
               </div>
-        <h3 class="tab__title">CUSTOM FORM ELEMENTS</h3>
-        <div class="tab__custom-elements">
+        <h3 class="tabs__title">CUSTOM FORM ELEMENTS</h3>
+        <div class="tabs__custom-elements">
             <label class="radio">
               <input class="radio__input" type="radio" name="radio" checked>
               <div class="radio__state">
@@ -611,10 +613,10 @@
         </div> <!-- /tab__custom-elements -->
       </div>
         </div>
-        <div class="tabs__content tabs__content--template">
+        <div class="tabs__content tabs__content--tab-4">
       <div class="container">
         <div class="tabs__list">
-          <a class="card">
+          <a class="card" href="../../pages/histogram-page/template.html">
             <div class="card__content">
               <div class="histogram">
                 <div class="histogram__header">
@@ -661,7 +663,7 @@
               <h5 class="card__suptitle">Element</h5>
             </div>
           </a> <!-- /card -->
-          <a class="card">
+          <a class="card" href="../../pages/modal-page/template.html">
             <div class="card__content">
               <div class="modal modal--preview">
                 <div class="modal__inner">
@@ -695,14 +697,14 @@
                   <div class="modal__header">
                     <div class="input modal__input">
                       <label class="input__title">Name</label>
-                      <input class="input__state" type="text" placeholder="Placeholder">
+                      <input class="input__state" type="text">
                     </div>
                     <div class="input modal__input">
                       <label class="input__title">Email</label>
-                      <input class="input__state" type="email" placeholder="Placeholder">
+                      <input class="input__state" type="email">
                     </div>
                     <button class="btn btn-list__btn btn--primary" type="submit">Submit</button>
-                    <svg class="modal__close">
+                    <svg id="modal-close" class="modal__close">
                       <use xlink:href="../sprite/sprite.svg#close"></use>
                     </svg>
                   </div>
@@ -746,7 +748,7 @@
           </div>
         </div>
       </main>
-      <footer class="footer">
+      <footer id="footer" class="footer">
         <div class="container">
           <h2 class="footer__title">About</h2>
           <p class="footer__text">This project is a collection of professionally designed, pre-built, fully 
@@ -757,4 +759,5 @@
       </footer>
     </body>
     <script src="../../05-lection3/02-modal/index.js"></script> 
+    <script src="../../10-lection8/01-theme-changer/theme-changer.js"></script>
 </html>

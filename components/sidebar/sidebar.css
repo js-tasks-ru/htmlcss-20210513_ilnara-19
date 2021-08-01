@@ -27,6 +27,22 @@
   cursor: pointer;
 }
 
+.sidebar__link--active {
+  color: var(--notification);
+}
+
 .sidebar__link:hover {
+  color: var(--notification);
+}
+
+html[data-theme-dark] .sidebar {
+  color: var(--grey-3);
+}
+
+html[data-theme-dark] .sidebar__link {
+  color: var(--grey-3);
+}
+
+html[data-theme-dark] .sidebar__link--active {
   color: var(--notification);
 }

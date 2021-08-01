@@ -78,3 +78,20 @@
 .modal--preview .modal__input {
   margin-bottom: 10px;
 }
+
+html[data-theme-dark] .modal__content {
+  background: var(--black);
+}
+
+html[data-theme-dark] .modal__title {
+  color: var(--grey-3);
+}
+
+html[data-theme-dark] .modal {
+  background-color: rgba(221, 226, 229, .7);
+}
+
+html[data-theme-dark] .modal__content {
+  background-color: var(--black);
+}
+

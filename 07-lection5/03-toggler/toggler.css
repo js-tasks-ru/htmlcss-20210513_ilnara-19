@@ -67,3 +67,7 @@
 .toggler__input:focus ~ .toggler__state .toggler__control {
   border-color: var(--blue-2);
 }
+
+html[data-theme-dark] .toggler__title {
+  color: var(--white);
+}

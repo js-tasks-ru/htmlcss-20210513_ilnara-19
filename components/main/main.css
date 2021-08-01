@@ -1,4 +1,8 @@
 /* Стилизация главного блока */
 .main {
-  background-color: var(--white);
+  background-color: var(--grey-5);
+}
+
+html[data-theme-dark] .main {
+  background-color: var(--grey-4);
 }

@@ -45,6 +45,7 @@
 .tooltip__question {
   width: 26px;
   height: 30px;
+  color: var(--black);
   cursor: pointer;
  }
 
@@ -52,6 +53,9 @@
  opacity: 1;
 }
 
+html[data-theme-dark] .tooltip__question {
+  color: var(--blue-2);
+}
 
 
 

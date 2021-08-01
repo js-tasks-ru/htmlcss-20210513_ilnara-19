@@ -16,3 +16,7 @@
 .nav__link--active {
   color: var(--black);
 }
+
+html[data-theme-dark] .nav__link--active {
+  color: var(--grey-5);
+}

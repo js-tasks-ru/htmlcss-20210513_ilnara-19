@@ -32,7 +32,6 @@
   grid-template-columns: repeat(7, 1fr);
 }
 
-
 .calendar__item {
   display: flex;
   justify-content: center;
@@ -64,7 +63,7 @@
   background-color: var(--blue-3);
 }
 
-.calendar__item--numder {
+.calendar__item--number {
   margin-bottom: 0;
 }
 
@@ -95,4 +94,44 @@
 
 .calendar--preview .calendar__item--between-active {
   padding: 5px 6px; 
+}
+
+.calendar--template {
+  padding: 25px 30px 25px;
+}
+
+.calendar--template .calendar__title {
+  margin-bottom: 15px;
+}
+
+.calendar--template .calendar__item--day {
+  margin-bottom: 0px;
+}
+
+.calendar--template .calendar__item {
+  margin-bottom: 0px;
+}
+
+.calendar--template .calendar__item--active{
+  padding: 0px;
+}
+
+.calendar--template .calendar__item--between-active{
+  padding: 0px;
+}
+
+html[data-theme-dark] .calendar__title {
+  color: var(--grey-3);
+}
+
+html[data-theme-dark] .calendar__item {
+  color: var(--grey-3);
+}
+
+html[data-theme-dark] .calendar__item--active {
+  color: var(--white);
+}
+
+html[data-theme-dark] .calendar__item--between-active {
+  color: var(--white);
 }

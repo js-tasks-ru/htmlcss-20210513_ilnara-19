@@ -54,3 +54,12 @@
   line-height: 1.5;
   color: var(--grey-4);
 }
+
+html[data-theme-dark] .accordion__item {
+  background: var(--black);
+  color: var(--grey-3);
+}
+
+html[data-theme-dark] .accordion__text {
+  color: var(--grey-3);
+}

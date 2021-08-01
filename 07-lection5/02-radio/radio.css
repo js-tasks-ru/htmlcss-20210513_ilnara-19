@@ -70,3 +70,7 @@
 .radio__input:focus ~ .radio__state .radio__control {
   border: 2px solid var(--blue-2);
 }
+
+html[data-theme-dark] .radio__title {
+  color: var(--white);
+}
