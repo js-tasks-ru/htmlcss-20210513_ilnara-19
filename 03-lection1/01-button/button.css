@@ -75,10 +75,3 @@
   }
 }
 
-@media (max-width: 575px) {
-
-  .btn--small {
-    width: auto;
-  }
-}
-

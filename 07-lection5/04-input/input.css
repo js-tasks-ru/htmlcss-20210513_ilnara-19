@@ -103,7 +103,7 @@
   }
 
   .input--small {
-    width: inherit;
+    width: 100%;
   }
 }
 

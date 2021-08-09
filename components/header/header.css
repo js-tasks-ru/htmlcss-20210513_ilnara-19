@@ -34,7 +34,6 @@
 
 .header__control {
   display: flex;
-  padding-left: 57px;
 }
 
 .header__icon {
@@ -65,10 +64,6 @@
 
   .header__title {
     font-size: 38px;
-  }
-
-  .header__control {
-    padding-left: 40px;
   }
 }
 
