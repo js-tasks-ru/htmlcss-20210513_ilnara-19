@@ -1,13 +1,10 @@
 /* Стилизация мобильного меню */
 .burger {
-  display: flex;
   flex-direction: column;
-  width: 100vw;
-  min-height: 100vh;
-  padding: 16px;
   background-color: var(--grey-5);
-  
   position: fixed;
+  z-index: 4000;
+  display: none;
 }
 
 .burger__icon {
@@ -18,8 +15,8 @@
 
 .burger__icon-close {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: -20px;
+  left: 0;
   z-index: 1;
 
   display: none;
@@ -45,6 +42,12 @@
 
 .burger__menu[data-open] {
   display: block;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .burger__night-theme {
@@ -58,4 +61,16 @@
   font-size: 16px;
   line-height: 1.2;
   color: var(--grey-4);
+}
+
+@media (max-width: 575px) {
+ 
+  .burger {
+    display: flex;
+    background-color: var(--white);
+  }
+
+  .burger__menu[data-open] {
+    background-color: var(--white);
+  }
 }

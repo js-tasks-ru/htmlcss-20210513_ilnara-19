@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="../card/card.css">
       <link rel="stylesheet" href="../footer/footer.css">
       <link rel="stylesheet" href="../nav/nav.css">
+      <link rel="stylesheet" href="../sidebar/sidebar.css">
       <link rel="stylesheet" href="../sprite/sprite.svg">
       <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
       <link rel="stylesheet" href="../../07-lection5/02-radio/radio.css">
@@ -21,8 +22,10 @@
       <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
       <link rel="stylesheet" href="../../04-lection2/02-skeleton/skeleton.css">
       <link rel="stylesheet" href="../../03-lection1/02-accordion/accordion.css">
+      <link rel="stylesheet" href="../../09-lection7/01-burger-menu/burger-menu.css">
       <link rel="stylesheet" href="../tab/tab.css">
       <link rel="stylesheet" href="./page.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <style>
         .group-elements {
           display: flex;
@@ -31,6 +34,10 @@
           cursor: default;
         }
 
+        .group-elements:last-child {
+          margin-right: 0;
+        }
+        
         .group-elements__item + .group-elements__item {
           margin-top: 16px;
         }
@@ -40,6 +47,41 @@
       <header class="header">
   <div class="container">
     <div class="header__inner">
+      <div class="burger" >
+        <svg id="burger-menu-open" class="burger__icon">
+          <use xlink:href='../../components/sprite/sprite.svg#open-menu'></use>
+        </svg>
+        <svg id="burger-menu-close" class="burger__icon burger__icon-close">
+          <use xlink:href='../../components/sprite/sprite.svg#close-menu'></use>
+        </svg>
+       <div id="burger-menu" class="burger__menu">
+        <div class="burger__line"></div>
+        <div id="burger-menu-close" class="burger__night-theme">
+        <p class="burger__title">Dark mode</p>
+        <label class="toggler">
+          <input class="toggler__input" type="checkbox" tabindex="">
+          <div class="toggler__state">
+            <div class="toggler__control">
+              <div class="toggler__icon">
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+        <div class="burger__line"></div>
+        <nav class="sidebar">
+          <div class="sidebar__item">
+            <h4 class="sidebar__title sidebar__title--grey">Components</h4>
+            <a class="sidebar__link" href="#">Modal</a>
+            <a class="sidebar__link" href="#">Tooltip</a>
+            <a class="sidebar__link" href="#">Avatar</a>
+            <a class="sidebar__link" href="#">Calendar</a>
+            <a class="sidebar__link" href="#">Histogram</a>
+            <a class="sidebar__link" href="#">Custom form elements</a>
+          </div>
+        </nav>
+      </div>
+    </div> 
       <svg class="header__logo">
         <use xlink:href="../sprite/sprite.svg#logo"></use>
       </svg>
@@ -85,7 +127,7 @@
             </div>
           </div>
          <div class="tabs__line"></div>
-         <div class="tabs__content tab__content--all-tabs">
+         <div class="tabs__content tabs__content--all-tabs">
          <div class="container">
          <!-- Карточки -->
            <div class="tabs__list"> 
@@ -435,7 +477,7 @@
         </div> <!-- /tab__content tab__content--elements -->
         <div class="tabs__content tabs__content--container">
           <div class="container">
-            <div class="tab-list">
+            <div class="tabs__list">
               <a class="card">
                 <div class="card__content">
                   <div class="tooltip card__tooltip">
@@ -510,7 +552,7 @@
                 </div>
               </a> <!-- /card -->
             </div>
-            <h3 class="tab__title">SKELETON</h3>
+            <h3 class="tabs__title">SKELETON</h3>
               <div class="skeleton skeleton--middle">
                 <div class="skeleton__header">
                   <div class="skeleton__avatar"></div>
@@ -524,8 +566,8 @@
                  <div class="skeleton__line"></div>
                 </div>
               </div>
-        <h3 class="tab__title">CUSTOM FORM ELEMENTS</h3>
-        <div class="tab__custom-elements">
+        <h3 class="tabs__title">CUSTOM FORM ELEMENTS</h3>
+        <div class="tabs__custom-elements">
             <label class="radio">
               <input class="radio__input" type="radio" name="radio" checked>
               <div class="radio__state">
@@ -757,4 +799,5 @@
       </footer>
     </body>
     <script src="../../05-lection3/02-modal/index.js"></script> 
+    <script src="../../09-lection7/01-burger-menu/burger-menu.js"></script> 
 </html>
