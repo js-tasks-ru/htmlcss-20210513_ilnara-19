@@ -41,3 +41,21 @@
   color: var(--grey-bg);
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 30px);
+    height: 367px;
+  } 
+}
+
+@media (max-width: 575px) {
+ 
+  .card {
+    margin-bottom: 0;
+    width: calc(100% - 30px);
+    height: 367px;
+  }
+}
+
+
