@@ -17,7 +17,8 @@
 .input__state {
   width: 100%;
   padding: 15px 10px;
-  border: 1px solid var(--grey-2);
+  border: 1px solid var(--border-color);
+  background-color: var(--white-bg);
   border-radius: 8px;
   outline: none;
   appearance: none;
@@ -100,12 +101,4 @@
   border: 1px solid var(--red);
 }
 
-html[data-theme-dark] .input__state {
-  background-color: var(--black);
-}
-
-html[data-theme-dark] .input__state--preview {
-  box-shadow: none;
-  border: 1px solid var(--white);
-}
 

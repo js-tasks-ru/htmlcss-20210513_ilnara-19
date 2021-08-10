@@ -86,6 +86,37 @@ details > summary {
     --primary: var(--blue);
     --secondary: var(--purple);
 
+    --nav-color: var(--grey-3);
+    --black-bg: var(--black);
+    --text-primary: var(--black);
+    --grey-bg: var(--grey-4);
+    --active-text-color: var(--black);
+    --white-bg: var(--white);
+    --text-color: var(--grey-4);
+    --border-color: var(--grey-2);
+    --main-bg: var(--grey-5);
+    --title-color: var(--black);
+    --blue-bg: var(--blue-1);
+    --color-icon: var(--black);
+    --color-day: var(--blue-bg);
+}
+
+
+html[data-theme-dark] {
+  --black-bg: var(--white);
+  --text-primary: var(--grey-3);
+  --active-text-color: var(--white);
+  --grey-bg: var(--grey-3);
+  --white-bg: var(--black);
+  --text-color: var(--white);
+  --border-color: var(--white);
+  --main-bg: var(--grey-4);
+  --notification: #D84910;
+  --title-color: var(--grey-3);
+  --blue-bg: var(--grey-3);
+  --color-icon: var(--blue-2);
+  --color-day: var(--white);
+
 }
 
 * {

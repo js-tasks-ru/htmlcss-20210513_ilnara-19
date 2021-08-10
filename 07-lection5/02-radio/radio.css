@@ -51,7 +51,7 @@
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  color: var(--grey-4);
+  color: var(--text-color);
 }
 
 .radio__input:checked ~ .radio__state .radio__control
@@ -69,8 +69,4 @@
 
 .radio__input:focus ~ .radio__state .radio__control {
   border: 2px solid var(--blue-2);
-}
-
-html[data-theme-dark] .radio__title {
-  color: var(--white);
 }

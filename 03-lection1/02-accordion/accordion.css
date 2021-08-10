@@ -9,6 +9,7 @@
   margin-bottom: 8px;
   border: 1px solid var(--grey-3);
   border-radius: 8px;
+  background: var(--white-bg);
 }
 
 .accordion__item:last-child {
@@ -19,15 +20,14 @@
   position: relative;
   padding: 24px 0;
   padding-left: 32px;
-  
+  color: var(--text-primary);
 }
 
 .accordion__title {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5;
-  color: var(--black);
+  line-height: 1.5; 
 }
 
 .accordion__arrow {
@@ -52,14 +52,6 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--grey-4);
+  color: var(--text-primary);
 }
 
-html[data-theme-dark] .accordion__item {
-  background: var(--black);
-  color: var(--grey-3);
-}
-
-html[data-theme-dark] .accordion__text {
-  color: var(--grey-3);
-}

@@ -13,7 +13,7 @@
   font-size: 20px;
   line-height: 1.2;
   font-weight: 600;
-  color: var(--blue-1);
+  color: var(--blue-bg);
   text-align: center;
 }
 
@@ -41,7 +41,7 @@
   font-size: 16px;
   line-height: 1.25;
   font-weight: 400;
-  color: var(--blue-1);
+  color: var(--blue-bg);
   text-align: center;
 }
 
@@ -61,6 +61,7 @@
 .calendar__item--between-active {
   padding: 8px 10px;
   background-color: var(--blue-3);
+  color: var(--color-day);
 }
 
 .calendar__item--number {
@@ -118,20 +119,4 @@
 
 .calendar--template .calendar__item--between-active{
   padding: 0px;
-}
-
-html[data-theme-dark] .calendar__title {
-  color: var(--grey-3);
-}
-
-html[data-theme-dark] .calendar__item {
-  color: var(--grey-3);
-}
-
-html[data-theme-dark] .calendar__item--active {
-  color: var(--white);
-}
-
-html[data-theme-dark] .calendar__item--between-active {
-  color: var(--white);
 }
