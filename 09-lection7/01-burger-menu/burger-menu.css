@@ -2,8 +2,6 @@
 .burger {
   flex-direction: column;
   background-color: var(--grey-5);
-  position: fixed;
-  z-index: 4000;
   display: none;
 }
 
@@ -14,11 +12,6 @@
 }
 
 .burger__icon-close {
-  position: absolute;
-  top: -20px;
-  left: 0;
-  z-index: 1;
-
   display: none;
 }
 
@@ -37,17 +30,20 @@
 }
 
 .burger__menu {
-  display: none;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  padding: 0 15px;
+  background-color: rgba(255, 255, 255, 1);
+  transform: translateX(-100vw);
+  transition: transform 200ms ease-in-out;
 }
 
 .burger__menu[data-open] {
-  display: block;
-  padding: 16px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  transform: translateX(0);
 }
 
 .burger__night-theme {
@@ -66,11 +62,7 @@
 @media (max-width: 575px) {
  
   .burger {
-    display: flex;
-    background-color: var(--white);
-  }
-
-  .burger__menu[data-open] {
+    display: block;
     background-color: var(--white);
   }
 }
