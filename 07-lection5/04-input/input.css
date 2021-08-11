@@ -1,19 +1,29 @@
 /* Стилизация полей */
 .input {
+<<<<<<< HEAD
+  display: flex;
+=======
   width: 100%;
   display: inline-flex;
+>>>>>>> master
   flex-direction: column;
   font-family: "Inter", sans-serif;
 }
 
 .input--small {
+  display: inline-block;
   width: 40%;
+}
+
+.input--middle {
+  width: 50%;
 }
 
 .input__state {
   width: 100%;
   padding: 15px 10px;
-  border: 1px solid var(--grey-2);
+  border: 1px solid var(--border-color);
+  background-color: var(--white-bg);
   border-radius: 8px;
   outline: none;
   appearance: none;

@@ -32,7 +32,7 @@
 .modal__content {
   width: 400px;
   padding: 30px 40px;
-  background-color: var(--white);
+  background-color: var(--white-bg);
   border-radius: 8px;
 }
 
@@ -51,7 +51,7 @@
   font-size: 18px;
   line-height: 1.2;
   font-weight: 600;
-  color: var(--blue-1);
+  color: var(--blue-bg);
 }
 
 .modal__close {
@@ -77,4 +77,8 @@
 
 .modal--preview .modal__input {
   margin-bottom: 10px;
+}
+
+html[data-theme-dark] .modal {
+  background-color: rgba(221, 226, 229, .7);
 }

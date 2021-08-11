@@ -46,7 +46,7 @@
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  color: var(--grey-4);
+  color: var(--text-color);
 }
 
 .toggler--disabled {

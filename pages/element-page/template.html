@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../template.css">
+  <link rel="stylesheet" href="../../components/header/header.css">
+  <link rel="stylesheet" href="../../components/nav/nav.css">
+  <link rel="stylesheet" href="../../components/main/main.css">
+  <link rel="stylesheet" href="../../components/sidebar/sidebar.css">
+  <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
+  <link rel="stylesheet" href="../../07-lection5/01-checkbox/checkbox.css">
+  <link rel="stylesheet" href="../../07-lection5/02-radio/radio.css">
+  <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
+  <link rel="stylesheet" href="../../07-lection5/04-input/input.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="template">
+  <header class="header header--grey">
+    <div class="container">
+      <div class="template__header">
+          <a href="../../components/page/index.html">
+            <svg class="template__logo">
+            <use xlink:href="../../components/sprite/sprite.svg#logo"></use>
+          </svg>
+          </a>
+        <div class="template__menu">
+        <nav class="nav">
+          <a class="nav__link nav__link--active" href="#">Components</a>
+          <a class="nav__link" href="#">About</a>
+          <a class="nav__link" href="#">Contact</a>
+        </nav>
+        <div class="template__control">
+          <svg class="template__icon">
+            <use xlink:href="../../components/sprite/sprite.svg#sun"></use>
+          </svg>
+         <label class="toggler template__toggler">
+          <input class="toggler__input" type="checkbox" id="theme-changer">
+          <div class="toggler__state">
+            <div class="toggler__control toggler__control--grey">
+              <div class="toggler__icon toggler__icon--grey">
+              </div>
+            </div>
+          </div>
+        </label>
+        <svg class="template__icon">
+          <use xlink:href="../../components/sprite/sprite.svg#moon"></use>
+        </svg>        
+      </div>
+    </div>  
+    </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+    <div class="template__main">
+      <aside class="aside">
+        <nav class="sidebar">
+          <div class="sidebar__item">
+            <h4 class="sidebar__title">Components</h4>
+            <a class="sidebar__link" href="../modal-page/template.html">Modal</a>
+            <a class="sidebar__link" href="../tooltip-page/template.html">Tooltip</a>
+            <a class="sidebar__link" href="../avatar-page/template.html">Avatar</a>
+            <a class="sidebar__link" href="../calendar-page/template.html">Calendar</a>
+            <a class="sidebar__link" href="../histogram-page/template.html">Histogram</a>
+            <a class="sidebar__link  sidebar__link--active">Custom form elements</a>
+          </div>
+        </nav>
+      </aside>
+      <section class="template__section">
+        <h3 class="template__section-title">Custom form elements</h3>
+        <div class="template__custom-elements">
+          <label class="radio">
+            <input class="radio__input" type="radio" name="radio" checked>
+            <div class="radio__state">
+              <div class="radio__control">
+                <div class="radio__icon"></div>
+              </div>
+              <div class="radio__title">Male</div>
+            </div>
+          </label>
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" tabindex="" checked>
+          <div class="checkbox__state">
+            <div class="checkbox__control">
+              <svg class="checkbox__icon">
+                <use xlink:href="../sprite/sprite.svg#checkbox"></use>
+              </svg>                 
+            </div>
+            <div class="checkbox__title">Default</div>
+          </div>
+        </label>
+        <label class="toggler">
+          <input class="toggler__input" type="checkbox" tabindex="" checked>
+            <div class="toggler__state">
+              <div class="toggler__control">
+                <div class="toggler__icon"></div>
+              </div>
+              <div class="toggler__title">Toggler</div>
+            </div>
+        </label>
+        <label class="radio">
+          <input class="radio__input" type="radio" name="radio">
+          <div class="radio__state">
+            <div class="radio__control">
+              <div class="radio__icon"></div>
+            </div>
+            <div class="radio__title">Female</div>
+          </div>
+        </label>
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" tabindex="">
+            <div class="checkbox__state">
+              <div class="checkbox__control">
+                <svg class="checkbox__icon">
+                  <use xlink:href="../sprite/sprite.svg#checkbox"></use>
+                </svg> 
+              </div>
+              <div class="checkbox__title">Default</div>
+            </div>
+        </label>
+        <label class="toggler">
+          <input class="toggler__input" type="checkbox" tabindex="">
+            <div class="toggler__state">
+              <div class="toggler__control">
+                <div class="toggler__icon"></div>
+              </div>
+              <div class="toggler__title">Toggler</div>
+            </div>
+        </label>
+        <label class="radio">
+          <input class="radio__input" type="radio" name="radio" disabled>
+          <div class="radio__state radio__state--disabled">
+            <div class="radio__control radio__control--disabled">
+            </div>
+            <div class="radio__title">Special</div>
+          </div>
+        </label>
+        <label class="checkbox" disabled>
+          <input class="checkbox__input" type="checkbox">
+            <div class="checkbox__state">
+              <div class="checkbox__control"></div>
+              <div class="checkbox__title">Default</div>
+            </div>
+        </label>
+        <label class="toggler" disabled>
+          <input class="toggler__input" type="checkbox">
+            <div class="toggler__state">
+              <div class="toggler__control">
+                <div class="toggler__icon"></div>
+              </div>
+              <div class="toggler__title">Toggler</div>
+            </div>
+        </label>
+      </div>
+      <div class="input input--middle">
+        <label class="input__title">LABEL</label>
+        <input class="input__state " type="text">
+        <p class="input__subtitle">Some status</p>
+      </div>
+      <div class="input input--middle">
+        <label class="input__title" class="text">LABEL</label>
+        <div class="input__field">
+          <input class="input__state input__state--invalid" type="text">
+          <p class="input__subtitle">Some status</p>
+          <svg class="input__icon input__icon--error">
+            <use xlink:href="../sprite/sprite.svg#question#error"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="input input--middle">
+       <label class="input__title" class="text">LABEL</label>
+       <div class="input__field">
+         <input class="input__state input__state--success" type="text">
+         <p class="input__subtitle">Some status</p>
+        <svg class="input__icon input__icon--success">
+          <use xlink:href="../sprite/sprite.svg#question#success"></use>
+        </svg>
+       </div>
+      </div>
+      </section>
+    </div>
+  </div>
+</main>
+  <footer class="template__footer">
+    <div class="container">
+    <h5 class="template__text">Reusable component library</h5>
+  </div>
+  </footer>
+</div>
+</body>
+<script src="../../10-lection8/01-theme-changer/theme-changer.js"></script>
+</html>

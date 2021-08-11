@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../template.css">
+  <link rel="stylesheet" href="../../components/header/header.css">
+  <link rel="stylesheet" href="../../components/nav/nav.css">
+  <link rel="stylesheet" href="../../components/main/main.css">
+  <link rel="stylesheet" href="../../components/sidebar/sidebar.css">
+  <link rel="stylesheet" href="../../components/tab/tab.css">
+  <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
+  <link rel="stylesheet" href="../../05-lection3/02-modal/modal.css">
+  <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
+  <link rel="stylesheet" href="../../07-lection5/04-input/input.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="template">
+  <header class="header header--grey">
+    <div class="container">
+      <div class="template__header">
+          <a href="../../components/page/index.html">
+            <svg class="template__logo">
+            <use xlink:href="../../components/sprite/sprite.svg#logo"></use>
+          </svg>
+          </a>
+        <div class="template__menu">
+        <nav class="nav">
+          <a class="nav__link nav__link--active" href="#">Components</a>
+          <a class="nav__link" href="#">About</a>
+          <a class="nav__link" href="#">Contact</a>
+        </nav>
+        <div class="template__control">
+          <svg class="template__icon">
+            <use xlink:href="../../components/sprite/sprite.svg#sun"></use>
+          </svg>
+         <label class="toggler template__toggler">
+          <input class="toggler__input" type="checkbox" id="theme-changer">
+          <div class="toggler__state">
+            <div class="toggler__control toggler__control--grey">
+              <div class="toggler__icon toggler__icon--grey">
+              </div>
+            </div>
+          </div>
+        </label>
+        <svg class="template__icon">
+          <use xlink:href="../../components/sprite/sprite.svg#moon"></use>
+        </svg>        
+      </div>
+    </div>  
+    </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+    <div class="template__main">
+      <aside class="aside">
+        <nav class="sidebar">
+          <div class="sidebar__item">
+            <h4 class="sidebar__title">Components</h4>
+            <a class="sidebar__link sidebar__link--active">Modal</a>
+            <a class="sidebar__link" href="../tooltip-page/template.html">Tooltip</a>
+            <a class="sidebar__link" href="../avatar-page/template.html">Avatar</a>
+            <a class="sidebar__link" href="../calendar-page/template.html">Calendar</a>
+            <a class="sidebar__link" href="../histogram-page/template.html">Histogram</a>
+            <a class="sidebar__link" href="../element-page/template.html">Custom form elements</a>>
+          </div>
+        </nav>
+      </aside>
+      <section class="template__section">
+        <h3 class="template__section-title">Modal dialog</h3>
+        <button id="modal-open" class="template__section-element btn btn--primary btn--small">Open modal</button>
+            <div id="modal" class="modal">
+              <div class="modal__inner">
+                <div class="modal__content">
+                  <div class="modal__header">
+                    <div class="input modal__input">
+                      <label class="input__title">Name</label>
+                      <input class="input__state" type="text">
+                    </div>
+                    <div class="input modal__input">
+                      <label class="input__title">Email</label>
+                      <input class="input__state" type="email">
+                    </div>
+                    <button class="btn btn-list__btn btn--primary" type="submit">Submit</button>
+                    <svg id="modal-close" class="modal__close">
+                      <use xlink:href="../../components/sprite/sprite.svg#close"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <div class="tabs">
+          <input class="tabs__input" type="radio" id="tab-1" name="tab" checked>
+          <input class="tabs__input" type="radio" id="tab-2" name="tab">
+          <div class="container">
+            <div class="tabs__menu">
+              <label class="tabs__label" for="tab-1">HTML</label>
+              <label class="tabs__label" for="tab-2">CSS</label>
+            </div>
+          </div>
+          <div class="tabs__line"></div>
+          <div id="tabs__content" class="tabs__content tabs__content--tab-1 tabs__content--template">
+            <pre>
+              <code class="template__code">
+                &lt;button id="modal-open" class="btn btn--primary btn--small"&gt;Open modal&lt;/button&gt;
+                &lt;div id="modal" class="modal"&gt;
+                  &lt;div class="modal__inner"&gt;
+                    &lt;div class="modal__content"&gt;
+                      &lt;div class="modal__header"&gt;
+                        &lt;div class="input modal__input"&gt;
+                          &lt;label class="input__title"&gt;Name&lt;/label&gt;
+                          &lt;input class="input__state" type="text"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="input modal__input"&gt;
+                          &lt;label class="input__title"&gt;Email&lt;/label&gt;
+                          &lt;input class="input__state" type="email"&gt;
+                        &lt;/div&gt;
+                        &lt;button class="btn btn-list__btn btn--primary" type="submit"&gt;Submit&lt;/button&gt;
+                        &lt;svg id="modal-close" class="modal__close"&gt;
+                          &lt;use xlink:href="../sprite/sprite.svg#close"&gt;&lt;/use&gt;
+                        &lt;/svg&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt; 
+            </code>
+          </pre>
+          </div>
+          <div id="tabs__content" class="tabs__content tabs__content--tab-2 tabs__content--template">
+            <pre>
+              <code class="template__code">
+                modal {
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  z-index: 2000;
+                  background-color: rgba(0, 0, 0, .7);
+                  width: 100%;
+                  height: 100%;
+                
+                
+                  display: none;
+                }
+                
+                .modal__inner {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  min-height: 100%;
+                }
+                
+                .modal__content {
+                  width: 400px;
+                  padding: 30px 40px;
+                  background-color: var(--white);
+                  border-radius: 8px;
+                }
+                
+                .modal__header {
+                  position: relative;
+                }
+                
+                .modal__title {
+                  margin-bottom: 10px;
+                  font-family: 'Inter', sans-serif;
+                  font-size: 18px;
+                  line-height: 1.2;
+                  font-weight: 600;
+                  color: var(--blue-1);
+                }
+                
+                .modal__close {
+                  width: 20px;
+                  height: 20px;
+                  position: absolute;
+                  top: -20px;
+                  left: 100%;
+                  z-index: 1;
+                
+                  cursor: pointer;
+                }
+      
+                .modal__input {
+                  margin-bottom: 15px;
+                } 
+              </code>
+            </pre>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+  <footer class="template__footer">
+    <div class="container">
+    <h5 class="template__text">Reusable component library</h5>
+  </div>
+  </footer>
+</div>
+</body>
+<script src="../../05-lection3/02-modal/index.js"></script> 
+<script src="../../10-lection8/01-theme-changer/theme-changer.js"></script>
+</html>

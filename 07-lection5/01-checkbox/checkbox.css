@@ -24,6 +24,10 @@
   position: relative;
 }
 
+.checkbox__control--disabled {
+  background-color: var(--grey-2);
+}
+
 .checkbox__icon {
   width: 24px;
   height: 24px;
@@ -41,7 +45,7 @@
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  color: var(--grey-4);
+  color: var(--text-color);
 }
 
 .checkbox--disabled {
