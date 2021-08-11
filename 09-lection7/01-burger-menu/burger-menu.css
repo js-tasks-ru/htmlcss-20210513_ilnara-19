@@ -9,6 +9,8 @@
  width: 24px;
  height: 24px;
  cursor: pointer;
+
+ display: none;
 }
 
 .burger__icon-close {
