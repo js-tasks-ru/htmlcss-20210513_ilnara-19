@@ -24,6 +24,10 @@
   position: relative;
 }
 
+.checkbox__control--disabled {
+  background-color: var(--grey-2);
+}
+
 .checkbox__icon {
   width: 24px;
   height: 24px;
@@ -41,7 +45,7 @@
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  color: var(--grey-4);
+  color: var(--text-color);
 }
 
 .checkbox--disabled {
@@ -53,6 +57,7 @@
 {
   background-color: var(--blue-2);
   border-color: var(--blue-2); 
+  animation: shadow 600ms  1 ease-in forwards;
 }
 
 .checkbox__input:checked ~ .checkbox__state .checkbox__icon {
@@ -61,6 +66,23 @@
 
 .checkbox__input:focus ~ .checkbox__state .checkbox__control {
   border-color: var(--blue-2);
+}
+
+@keyframes shadow {
+  0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(66, 99, 235, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(66, 99, 235, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(66, 99, 235, 0);
+	}
 }
 
 

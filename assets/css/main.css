@@ -42,6 +42,16 @@ button {
   padding: 0;
 }
 
+pre{
+  margin: 0;
+  padding: 0;
+}
+
+code{
+  margin: 0;
+  padding: 0;
+}
+
 *, ::after, ::before {
   box-sizing: border-box;
 }
@@ -67,7 +77,6 @@ details > summary {
     --blue-1: #334D6E;
     --blue-2: #4263EB;
     --blue-3: #A0B1F5;
-    --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
@@ -87,6 +96,46 @@ details > summary {
     --primary: var(--blue);
     --secondary: var(--purple);
 
+    --nav-color: var(--grey-3);
+    --black-bg: var(--black);
+    --text-primary: var(--black);
+    --grey-bg: var(--grey-4);
+    --active-text-color: var(--black);
+    --white-bg: var(--white);
+    --text-color: var(--grey-4);
+    --border-color: var(--grey-2);
+    --main-bg: var(--grey-5);
+    --title-color: var(--black);
+    --blue-bg: var(--blue-1);
+    --color-icon: var(--black);
+    --color-day: var(--blue-bg);
+    --icon-color-sun-tm: var(--grey-4);
+    --icon-color-moon-tm: var(--grey-3);
+    --icon-color-sun: var(--grey-4);
+    --icon-color-moon: var(--grey-3);
+    --icon-color-menu: var(--grey-4);
+}
+
+
+html[data-theme-dark] {
+  --black-bg: var(--white);
+  --text-primary: var(--grey-3);
+  --active-text-color: var(--white);
+  --grey-bg: var(--grey-3);
+  --white-bg: var(--black);
+  --text-color: var(--white);
+  --border-color: var(--white);
+  --main-bg: var(--grey-4);
+  --notification: #D84910;
+  --title-color: var(--grey-3);
+  --blue-bg: var(--grey-3);
+  --color-icon: var(--blue-2);
+  --color-day: var(--white);
+  --icon-color-moon: var(--grey-1);
+  --icon-color-sun: var(--grey-4);
+  --icon-color-sun-tm: var(--grey-3);
+  --icon-color-moon-tm: var(--black);
+  --icon-color-menu: var(--black);
 }
 
 * {

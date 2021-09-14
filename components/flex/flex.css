@@ -1,0 +1,31 @@
+.group-elements {
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+  cursor: default;
+}
+
+.group-elements:last-child {
+  margin-right: 0;
+}
+
+.group-elements__item + .group-elements__item {
+  margin-top: 16px;
+}
+
+/* Media query 
+
+@media (max-width: 930px) {
+
+  .group-elements {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .group-elements {
+    margin-right: 16px;
+  }
+}*/

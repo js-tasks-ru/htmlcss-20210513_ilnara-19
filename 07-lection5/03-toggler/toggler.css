@@ -11,7 +11,6 @@
 .toggler__state {
   display: flex;
   align-items: center;
-
   cursor: pointer;
 }
 
@@ -25,7 +24,7 @@
   height: 28px;
   border: 1px solid var(--grey-2);
   border-radius: 16px;
-  
+  transition: background-color 300ms linear;
   position: relative;
 }
 
@@ -38,6 +37,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-100%, -50%);
+  transition: transform 300ms linear;
 }
 
 .toggler__title {
@@ -46,7 +46,7 @@
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  color: var(--grey-4);
+  color: var(--text-color);
 }
 
 .toggler--disabled {
@@ -62,6 +62,7 @@
 .toggler__input:checked ~ .toggler__state .toggler__icon {
   background-color: var(--white);
   transform: translate(0, -50%);
+  transition: transform 300ms linear;
 }
 
 .toggler__input:focus ~ .toggler__state .toggler__control {

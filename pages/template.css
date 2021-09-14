@@ -3,8 +3,8 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 36px 0;
-  min-height: 100vh;
-  background-color: var(--grey-5);
+  /*min-height: 100vh;*/
+  background-color: var(--main-bg);
 }
 
 .template__header{
@@ -14,18 +14,33 @@
   height: 82px;
 }
 
+.template__logo {
+  width: 110px;
+  height: 32px;
+  color: var(--black-bg);
+}
+
 .template__menu {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+}
+
+.template__control {
+  display: flex;
   align-items: center;
 }
 
 .template__icon {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-left: 57px;
+  width: 24px;
+  height: 24px;
+}
+
+.template__icon--sun {
+  color: var(--icon-color-sun-tm);
+}
+
+.template__icon--moon {
+  color: var(--icon-color-moon-tm);
 }
 
 .template__toggler {
@@ -34,23 +49,36 @@
 
 .template__main {
   display: grid;
-  grid-template-columns: 229px 1fr;
+  grid-template-columns: 299px 1fr;
 }
 
 .template__section {
-  background-color: var(--white);
+  width: 100%;
+  background-color: var(--white-bg);
   border-radius: 12px;
   box-shadow: 0 2px 4px 0 rgba(var(--black), .05);
-  padding-top: 32px;
-  padding-left: 48px;
+  padding: 32px;
+  overflow:hidden;
 }
 
 .template__section-title {
+  margin-bottom: 30px;
   font-family: 'Inter', sans-serif;
   font-size: 28px;
   line-height: 1.4;
   font-weight: normal;
-  color: var(--grey-4);
+  color: var(--grey-bg);
+}
+
+.template__custom-elements {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  gap: 30px;
+}
+
+.template__section-element {
+  margin-bottom: 30px;
 }
 
 .template__footer {
@@ -58,11 +86,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--grey-5); 
+  background-color: var(--main-bg); 
 }
 
 .template__text {
-  margin-bottom: 56px;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 1.5;
@@ -70,4 +97,49 @@
   text-align: center;
   color: var(--grey-3);
 }
+
+pre {
+  overflow-x: auto;
+}
+
+.template__code {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--text-primary);
+}
+
+/* Media query */
+@media (max-width: 768px) {
+  
+  .template {
+    gap: 0;
+  }
+
+  .template__main {
+    grid-template-columns: auto;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .template__menu {
+    display: none;
+  }
+
+  .template__logo-link {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .template__section {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
 

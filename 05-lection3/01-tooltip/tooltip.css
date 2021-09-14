@@ -45,14 +45,13 @@
 .tooltip__question {
   width: 26px;
   height: 30px;
+  color: var(--color-icon);
   cursor: pointer;
  }
 
 .tooltip__question:hover ~ .tooltip__answer {
  opacity: 1;
 }
-
-
 
 
 

@@ -1,7 +1,6 @@
 /* Стилизация мобильного меню */
 .burger {
   flex-direction: column;
-  background-color: var(--grey-5);
   display: none;
 }
 
@@ -9,6 +8,11 @@
  width: 24px;
  height: 24px;
  cursor: pointer;
+ color: var(--grey-4);
+}
+
+.burger__icon.burger__icon--black{
+  color: var(--icon-color-menu);
 }
 
 .burger__icon-close {
@@ -31,15 +35,19 @@
 
 .burger__menu {
   position: fixed;
-  top: 64px;
+  top: 60px;
   left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 2000;
   padding: 0 15px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--white-bg);
   transform: translateX(-100vw);
   transition: transform 200ms ease-in-out;
+}
+
+.burger__menu--grey {
+background-color: var(--main-bg);
 }
 
 .burger__menu[data-open] {
@@ -59,10 +67,9 @@
   color: var(--grey-4);
 }
 
-@media (max-width: 575px) {
+@media (max-width: 768px) {
  
   .burger {
     display: block;
-    background-color: var(--white);
   }
 }

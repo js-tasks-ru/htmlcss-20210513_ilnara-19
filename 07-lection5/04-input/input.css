@@ -1,22 +1,37 @@
 /* Стилизация полей */
 .input {
-  width: 100%;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
+  margin-bottom: 40px;
 }
 
 .input--small {
+  display: inline-block;
   width: 40%;
+}
+
+.input--middle {
+  display: block;
+  width: 50%;
 }
 
 .input__state {
   width: 100%;
   padding: 15px 10px;
-  border: 1px solid var(--grey-2);
+  border: 1px solid var(--border-color);
+  background-color: var(--white-bg);
   border-radius: 8px;
   outline: none;
   appearance: none;
+}
+
+.input__state--success {
+  border: 1px solid var(--blue-2);
+}
+
+.input__state--invalid{
+  border: 1px solid var(--red);
 }
 
 .input__state--preview {
@@ -30,15 +45,7 @@
   background-color: var(--grey-2);
 }
 
-.input__state::placeholder {
-  color: var(--grey-2);
-  font-size: 20px;
-  line-height: 1.3;
-  font-weight: lighter;
-}
-
 .input__title {
-  margin-bottom: 5px;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 1px;
@@ -61,8 +68,6 @@
   top: 50%;
   right: 10px;
   transform: translate(0, -50%);
-  
-  display: none;
 }
 
 .input__subtitle {
@@ -70,6 +75,8 @@
   line-height: 1.2;
   font-weight: 400;
   color: var(--grey-3);
+
+  position: absolute;
 }
 
 .input__icon--error {
@@ -80,28 +87,12 @@
   color: var(--success);
 }
 
-.input__state:focus {
-  border: 1px solid var(--blue-2);
+.input__state:not(.input__state--invalid):focus{
+  border: 1px solid var(--blue-2); 
 }
 
-.input__state--invalid:focus ~ .input__icon {
- display: block;
-}
-
-.input__state--success:focus ~ .input__icon {
-  display: block;
-}
-
-.input__state--invalid:focus {
-  border: 1px solid var(--red);
-}
-
-@media (max-width: 575px) {
+@media (max-width: 480px) {
   
-  .input {
-    margin-bottom: 10px;
-  }
-
   .input--small {
     width: 100%;
   }
