@@ -1,19 +1,12 @@
 /* Стилизация полей */
 .input {
-  display: flex;
-  flex-direction: column;
-  font-family: "Inter", sans-serif;
+  display: block;
   margin-bottom: 40px;
 }
 
 .input--small {
   display: inline-block;
   width: 40%;
-}
-
-.input--middle {
-  display: block;
-  width: 50%;
 }
 
 .input__state {

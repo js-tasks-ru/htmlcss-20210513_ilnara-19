@@ -142,4 +142,11 @@ pre {
   }
 }
 
+@media (max-width: 480px) {
+  
+  .template__custom-elements {
+    gap: 20px;
+  }
+}
+
 

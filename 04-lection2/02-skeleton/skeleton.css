@@ -19,7 +19,10 @@
   width: 64px;
   height: 64px;
   margin-right: 16px;
-  background-color: var(--grey-2);
+  background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--white-1) 38.47%, var(--white-2) 56.48%, var(--white-3) 77.5%, var(--grey-2) 102.52%);  
+  animation: crd 2s ease-in-out infinite forwards;
+  background-size: 200%;
+  /*background-color: var(--grey-2);*/
   border-radius: 50%;
 }
 
@@ -33,7 +36,21 @@
 .skeleton__line {
   height: 20px;
   margin-bottom: 8px;
-  background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--white-1) 38.47%, var(--white-2) 56.48%, var(--white-3) 77.5%, var(--grey-2) 102.52%);   
+  background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--white-1) 38.47%, var(--white-2) 56.48%, var(--white-3) 77.5%, var(--grey-2) 102.52%);  
+  animation: crd 2s ease-in-out infinite forwards;
+  background-size: 200%;
+}
+
+@keyframes crd {
+  0% {
+    opacity: .5;
+    background-position: 100%;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
 }
 
 .skeleton__line--short {
