@@ -1,0 +1,22 @@
+.hljs, .hljs-number, .hljs-tag .hljs-name, .hljs-tag{
+  background: var(--white-bg);
+  font-weight: normal;
+  color: #4263EB;
+}
+
+.hljs-keyword, .hljs-attribute, .hljs-tag .hljs-attr{
+  color: #7048E8;
+}
+
+.hljs-attribute {
+  font-weight: normal;
+}
+
+.hljs-string, .hljs-selector-class{
+  color: #F03D3E;
+}
+
+pre code.hljs {
+  padding: 0;
+}
+

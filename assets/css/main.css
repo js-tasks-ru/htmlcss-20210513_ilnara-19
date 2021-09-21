@@ -7,6 +7,17 @@ body {
   padding: 0;
 }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -52,9 +63,6 @@ code{
   padding: 0;
 }
 
-*, ::after, ::before {
-  box-sizing: border-box;
-}
 
 /* Убираем стандартный маркер Chrome */
 details summary::-webkit-details-marker {
