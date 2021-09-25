@@ -22,7 +22,6 @@
   background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--white-1) 38.47%, var(--white-2) 56.48%, var(--white-3) 77.5%, var(--grey-2) 102.52%);  
   animation: crd 2s ease-in-out infinite forwards;
   background-size: 200%;
-  /*background-color: var(--grey-2);*/
   border-radius: 50%;
 }
 

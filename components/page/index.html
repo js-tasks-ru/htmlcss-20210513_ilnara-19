@@ -58,12 +58,12 @@
         <nav class="sidebar">
           <div class="sidebar__item">
             <h4 class="sidebar__title sidebar__title--grey">Components</h4>
-            <a class="sidebar__link" href="#">Modal</a>
-            <a class="sidebar__link" href="#">Tooltip</a>
-            <a class="sidebar__link" href="#">Avatar</a>
-            <a class="sidebar__link" href="#">Calendar</a>
-            <a class="sidebar__link" href="#">Histogram</a>
-            <a class="sidebar__link" href="#">Custom form elements</a>
+            <a class="sidebar__link" href="../../pages/modal-page/template.html">Modal</a>
+            <a class="sidebar__link" href="../../pages/tooltip-page/template.html">Tooltip</a>
+            <a class="sidebar__link" href="../../pages/avatar-page/template.html">Avatar</a>
+            <a class="sidebar__link" href="../../pages/calendar-page/template.html">Calendar</a>
+            <a class="sidebar__link" href="../../pages/histogram-page/template.html">Histogram</a>
+            <a class="sidebar__link" href="../../pages/element-page/template.html">Custom form elements</a>
           </div>
         </nav>
       </div>
@@ -567,6 +567,23 @@
                 <div class="radio__title">Male</div>
               </div>
             </label>
+            <label class="radio">
+              <input class="radio__input" type="radio" name="radio">
+              <div class="radio__state">
+                <div class="radio__control">
+                  <div class="radio__icon"></div>
+                </div>
+                <div class="radio__title">Female</div>
+              </div>
+            </label>
+            <label class="radio">
+              <input class="radio__input" type="radio" name="radio" disabled>
+              <div class="radio__state radio__state--disabled">
+                <div class="radio__control radio__control--disabled">
+                </div>
+                <div class="radio__title">Special</div>
+              </div>
+            </label>
           <label class="checkbox">
             <input class="checkbox__input" type="checkbox" tabindex="" checked>
             <div class="checkbox__state">
@@ -576,24 +593,6 @@
                 </svg>                 
               </div>
               <div class="checkbox__title">Default</div>
-            </div>
-          </label>
-          <label class="toggler">
-            <input class="toggler__input" type="checkbox" tabindex="" checked>
-              <div class="toggler__state">
-                <div class="toggler__control">
-                  <div class="toggler__icon"></div>
-                </div>
-                <div class="toggler__title">Toggler</div>
-              </div>
-          </label>
-          <label class="radio">
-            <input class="radio__input" type="radio" name="radio">
-            <div class="radio__state">
-              <div class="radio__control">
-                <div class="radio__icon"></div>
-              </div>
-              <div class="radio__title">Female</div>
             </div>
           </label>
           <label class="checkbox">
@@ -607,6 +606,22 @@
                 <div class="checkbox__title">Default</div>
               </div>
           </label>
+          <label class="checkbox checkbox--disabled" disabled>
+            <input class="checkbox__input" type="checkbox">
+              <div class="checkbox__state">
+                <div class="checkbox__control checkbox__control--disabled"></div>
+                <div class="checkbox__title">Default</div>
+              </div>
+          </label>
+          <label class="toggler">
+            <input class="toggler__input" type="checkbox" tabindex="" checked>
+              <div class="toggler__state">
+                <div class="toggler__control">
+                  <div class="toggler__icon"></div>
+                </div>
+                <div class="toggler__title">Toggler</div>
+              </div>
+          </label>
           <label class="toggler">
             <input class="toggler__input" type="checkbox" tabindex="">
               <div class="toggler__state">
@@ -616,22 +631,7 @@
                 <div class="toggler__title">Toggler</div>
               </div>
           </label>
-          <label class="radio">
-            <input class="radio__input" type="radio" name="radio" disabled>
-            <div class="radio__state radio__state--disabled">
-              <div class="radio__control radio__control--disabled">
-              </div>
-              <div class="radio__title">Special</div>
-            </div>
-          </label>
-          <label class="checkbox" disabled>
-            <input class="checkbox__input" type="checkbox">
-              <div class="checkbox__state">
-                <div class="checkbox__control"></div>
-                <div class="checkbox__title">Default</div>
-              </div>
-          </label>
-          <label class="toggler" disabled>
+          <label class="toggler toggler--disabled" disabled>
             <input class="toggler__input" type="checkbox">
               <div class="toggler__state">
                 <div class="toggler__control">

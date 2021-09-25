@@ -72,9 +72,10 @@
 
 .template__custom-elements {
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: column;
   gap: 30px;
+  margin-bottom: 30px;
 }
 
 .template__section-element {
@@ -97,10 +98,6 @@
   text-align: center;
   color: var(--grey-3);
 }
-
-/*pre {
-  overflow-x: auto;
-}*/
 
 /* Media query */
 @media (max-width: 768px) {
@@ -139,7 +136,9 @@
 @media (max-width: 480px) {
   
   .template__custom-elements {
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-auto-flow: initial;
   }
 }
 

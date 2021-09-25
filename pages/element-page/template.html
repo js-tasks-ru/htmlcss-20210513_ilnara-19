@@ -112,6 +112,23 @@
               <div class="radio__title">Male</div>
             </div>
           </label>
+          <label class="radio">
+            <input class="radio__input" type="radio" name="radio">
+            <div class="radio__state">
+              <div class="radio__control">
+                <div class="radio__icon"></div>
+              </div>
+              <div class="radio__title">Female</div>
+            </div>
+          </label>
+          <label class="radio">
+            <input class="radio__input" type="radio" name="radio" disabled>
+            <div class="radio__state radio__state--disabled">
+              <div class="radio__control radio__control--disabled">
+              </div>
+              <div class="radio__title">Special</div>
+            </div>
+          </label>
         <label class="checkbox">
           <input class="checkbox__input" type="checkbox" tabindex="">
           <div class="checkbox__state">
@@ -123,6 +140,24 @@
             <div class="checkbox__title">Default</div>
           </div>
         </label>
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" tabindex="">
+            <div class="checkbox__state">
+              <div class="checkbox__control">
+                <svg class="checkbox__icon">
+                  <use xlink:href="../../components/sprite/sprite.svg#checkbox"></use>
+                </svg> 
+              </div>
+              <div class="checkbox__title">Default</div>
+            </div>
+        </label>
+        <label class="checkbox checkbox--disabled">
+          <input class="checkbox__input" type="checkbox" disabled>
+            <div class="checkbox__state">
+              <div class="checkbox__control checkbox__control--disabled"></div>
+              <div class="checkbox__title">Default</div>
+            </div>
+        </label>
         <label class="toggler">
           <input class="toggler__input" type="checkbox" tabindex="" checked>
             <div class="toggler__state">
@@ -130,26 +165,6 @@
                 <div class="toggler__icon"></div>
               </div>
               <div class="toggler__title">Toggler</div>
-            </div>
-        </label>
-        <label class="radio">
-          <input class="radio__input" type="radio" name="radio">
-          <div class="radio__state">
-            <div class="radio__control">
-              <div class="radio__icon"></div>
-            </div>
-            <div class="radio__title">Female</div>
-          </div>
-        </label>
-        <label class="checkbox">
-          <input class="checkbox__input" type="checkbox" tabindex="">
-            <div class="checkbox__state checkbox--disabled">
-              <div class="checkbox__control">
-                <svg class="checkbox__icon">
-                  <use xlink:href="../../components/sprite/sprite.svg#checkbox"></use>
-                </svg> 
-              </div>
-              <div class="checkbox__title">Default</div>
             </div>
         </label>
         <label class="toggler">
@@ -160,22 +175,7 @@
               </div>
               <div class="toggler__title">Toggler</div>
             </div>
-        </label>
-        <label class="radio">
-          <input class="radio__input" type="radio" name="radio" disabled>
-          <div class="radio__state radio__state--disabled">
-            <div class="radio__control radio__control--disabled">
-            </div>
-            <div class="radio__title">Special</div>
-          </div>
-        </label>
-        <label class="checkbox checkbox--disabled">
-          <input class="checkbox__input" type="checkbox" disabled>
-            <div class="checkbox__state">
-              <div class="checkbox__control checkbox__control--disabled"></div>
-              <div class="checkbox__title">Default</div>
-            </div>
-        </label>
+          </label>
         <label class="toggler toggler--disabled">
           <input class="toggler__input" type="checkbox">
             <div class="toggler__state">
