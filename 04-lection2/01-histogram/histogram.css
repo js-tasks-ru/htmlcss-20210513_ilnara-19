@@ -51,6 +51,12 @@
   height: 50px;
   margin-right: 1px;
   background-color: var(--blue);
+  animation: crescendo 600ms  1 ease-in forwards;
+}
+
+@keyframes crescendo {
+  0%   {height: 0;}
+  100% {transform: scaleY(1);}
 }
 
 .histogram__item:hover {
@@ -106,7 +112,7 @@
 }
 
 .histogram__item--22 {
-  height: 27%;
+  height: 27%; 
 }
 
 .histogram__item--13 {
@@ -120,7 +126,7 @@
 }
 
 .histogram__item--27 {
-  height: 51%;
+ height: 51%;
 }
 
 .histogram__item--28 {

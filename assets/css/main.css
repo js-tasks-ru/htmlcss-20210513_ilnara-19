@@ -7,6 +7,17 @@ body {
   padding: 0;
 }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -42,9 +53,16 @@ button {
   padding: 0;
 }
 
-*, ::after, ::before {
-  box-sizing: border-box;
+pre{
+  margin: 0;
+  padding: 0;
 }
+
+code{
+  margin: 0;
+  padding: 0;
+}
+
 
 /* Убираем стандартный маркер Chrome */
 details summary::-webkit-details-marker {
@@ -99,6 +117,11 @@ details > summary {
     --blue-bg: var(--blue-1);
     --color-icon: var(--black);
     --color-day: var(--blue-bg);
+    --icon-color-sun-tm: var(--grey-4);
+    --icon-color-moon-tm: var(--grey-3);
+    --icon-color-sun: var(--grey-4);
+    --icon-color-moon: var(--grey-3);
+    --icon-color-menu: var(--grey-4);
 }
 
 
@@ -116,7 +139,11 @@ html[data-theme-dark] {
   --blue-bg: var(--grey-3);
   --color-icon: var(--blue-2);
   --color-day: var(--white);
-
+  --icon-color-moon: var(--grey-1);
+  --icon-color-sun: var(--grey-4);
+  --icon-color-sun-tm: var(--grey-3);
+  --icon-color-moon-tm: var(--black);
+  --icon-color-menu: var(--black);
 }
 
 * {

@@ -9,10 +9,6 @@
   cursor: pointer;
 }
 
-.nav__link:last-child {
-  margin-right: 0;
-}
-
 .nav__link--active {
   color: var(--active-text-color);
 }

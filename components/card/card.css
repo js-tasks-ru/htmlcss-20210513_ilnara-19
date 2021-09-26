@@ -9,8 +9,6 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 
   cursor: pointer;
 }
@@ -23,6 +21,12 @@
   align-items: center;
 }
 
+.card__footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .card__title {
   margin: 25px 0 6px;
   font-family: 'Roboto', sans-serif;
@@ -30,7 +34,10 @@
   line-height: 1.17;
   font-weight: 500;
   color: var(--text-primary);
-  text-align: center;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card__suptitle {
@@ -39,7 +46,6 @@
   line-height: 1.17;
   font-weight: 400;
   color: var(--grey-bg);
-  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -49,12 +55,11 @@
   } 
 }
 
-@media (max-width: 575px) {
+@media (max-width: 480px) {
  
   .card {
     margin-bottom: 0;
     width: calc(100% - 30px);
-    height: 367px;
   }
 }
 

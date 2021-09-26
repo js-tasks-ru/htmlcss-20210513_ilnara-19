@@ -9,19 +9,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div class="burger" >
+          <div class="burger">
             <svg id="burger-menu-open" class="burger__icon">
               <use xlink:href='../../components/sprite/sprite.svg#open-menu'></use>
             </svg>
             <svg id="burger-menu-close" class="burger__icon burger__icon-close">
               <use xlink:href='../../components/sprite/sprite.svg#close-menu'></use>
             </svg>
-           <div id="burger-menu" class="burger__menu">
+           <div id="burger-menu" class="burger__menu burger__menu--grey">
             <div class="burger__line"></div>
-            <div id="burger-menu-close" class="burger__night-theme">
+            <div class="burger__night-theme">
             <p class="burger__title">Dark mode</p>
             <label class="toggler">
-              <input class="toggler__input" type="checkbox" tabindex="">
+              <input class="toggler__input" type="checkbox">
               <div class="toggler__state">
                 <div class="toggler__control">
                   <div class="toggler__icon">
@@ -43,7 +43,6 @@
               </div>
             </nav>
           </div>
-        </div>
       </div>
     </body>
     <script defer src="./burger-menu.js"></script>

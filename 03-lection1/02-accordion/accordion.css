@@ -18,7 +18,10 @@
 
 .accordion__header {
   position: relative;
-  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
   padding-left: 32px;
   color: var(--text-primary);
 }
@@ -30,20 +33,17 @@
   line-height: 1.5; 
 }
 
-.accordion__arrow {
-  position: absolute;
-  top: 32px;
-  right: 32px;
-  z-index: 1;
+.accordion__icon {
+  width: 20px;
+  height: 10px;
   cursor: pointer;
 }
 
 .accordion__item[open]>.accordion__header {
   padding-bottom: 16px;
 }
-
-.accordion__item[open]>.accordion__header::after  {
-  transform: rotate(135deg);
+.accordion__item[open] .accordion__icon  {
+  transform: rotate(180deg);
 }
 
 .accordion__text {

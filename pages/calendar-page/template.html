@@ -10,26 +10,60 @@
   <link rel="stylesheet" href="../../components/tab/tab.css">
   <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
   <link rel="stylesheet" href="../../05-lection3/03-calendar/calendar.css">
+  <link rel="stylesheet" href="../../09-lection7/01-burger-menu/burger-menu.css">
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+  <link rel="stylesheet" href="../../assets/css/custom.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body class="preload">
   <div class="template">
   <header class="header header--grey">
     <div class="container">
       <div class="template__header">
-          <a href="../../components/page/index.html">
+        <div class="burger">
+          <svg id="burger-menu-open" class="burger__icon burger__icon--black">
+            <use xlink:href='../../components/sprite/sprite.svg#open-menu'></use>
+          </svg>
+          <svg id="burger-menu-close" class="burger__icon burger__icon-close burger__icon--black">
+            <use xlink:href='../../components/sprite/sprite.svg#close-menu'></use>
+          </svg>
+         <div id="burger-menu" class="burger__menu burger__menu--grey">
+          <div class="burger__line"></div>
+          <div class="burger__night-theme">
+          <p class="burger__title">Dark mode</p>
+          <label class="toggler">
+            <input class="toggler__input" type="checkbox" id= "theme-changer-mobail">
+            <div class="toggler__state">
+              <div class="toggler__control">
+                <div class="toggler__icon">
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+          <div class="burger__line"></div>
+          <nav class="sidebar">
+            <div class="sidebar__item">
+              <h4 class="sidebar__title sidebar__title--grey">Components</h4>
+              <a class="sidebar__link" href="../modal-page/template.html">Modal</a>
+              <a class="sidebar__link" href="../tooltip-page/template.html">Tooltip</a>
+              <a class="sidebar__link" href="../avatar-page/template.html">Avatar</a>
+              <a class="sidebar__link" href="../calendar-page/template.html">Calendar</a>
+              <a class="sidebar__link" href="../histogram-page/template.html">Histogram</a>
+              <a class="sidebar__link" href="../element-page/template.html">Custom form elements</a>
+            </div>
+          </nav>
+        </div>
+    </div>
+          <a class="template__logo-link" href="../../components/page/index.html">
             <svg class="template__logo">
             <use xlink:href="../../components/sprite/sprite.svg#logo"></use>
           </svg>
           </a>
         <div class="template__menu">
-        <nav class="nav">
-          <a class="nav__link nav__link--active" href="#">Components</a>
-          <a class="nav__link" href="#">About</a>
-          <a class="nav__link" href="#">Contact</a>
-        </nav>
         <div class="template__control">
-          <svg class="template__icon">
+          <svg class="template__icon template__icon--sun">
             <use xlink:href="../../components/sprite/sprite.svg#sun"></use>
           </svg>
          <label class="toggler template__toggler">
@@ -41,7 +75,7 @@
             </div>
           </div>
         </label>
-        <svg class="template__icon">
+        <svg class="template__icon template__icon--moon">
           <use xlink:href="../../components/sprite/sprite.svg#moon"></use>
         </svg>        
       </div>
@@ -66,6 +100,7 @@
         </nav>
       </aside>
       <section class="template__section">
+        <div class="container">
         <h3 class="template__section-title">Calendar</h3>
         <div class="template__section-element calendar calendar--template">
           <div class="calendar__title">October 2020</div>
@@ -129,7 +164,7 @@
           <div class="tabs__line"></div>
           <div id="tabs__content" class="tabs__content tabs__content--tab-1 tabs__content--template">
             <pre>
-              <code class="template__code">
+              <code data-language="HTML">
                 &lt;div class="calendar"&gt;
               &lt;div class="calendar__title"&gt;October 2020&lt;/div&gt;
               &lt;div class="calendar__wrapper"&gt;
@@ -184,7 +219,7 @@
           </div>
           <div id="tabs__content" class="tabs__content tabs__content--tab-2 tabs__content--template">
             <pre>
-              <code class="template__code">
+              <code data-language="CSS">
                 .calendar {
                   width: 100%;
                   max-width: 320px;
@@ -257,6 +292,7 @@
           
           </div>
           </div>
+        </div>
       </section>
     </div>
   </div>
@@ -269,4 +305,8 @@
 </div>
 </body>
 <script src="../../10-lection8/01-theme-changer/theme-changer.js"></script>
+<script src="../../09-lection7/01-burger-menu/burger-menu.js"></script>
+<script src="../../assets/js/load.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 </html>

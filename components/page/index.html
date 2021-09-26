@@ -4,7 +4,9 @@
     <head>
       <link rel="stylesheet" href="../../assets/css/main.css">
       <link rel="stylesheet" href="../header/header.css">
+      <link rel="stylesheet" href="../flex/flex.css">
       <link rel="stylesheet" href="../main/main.css">
+      <link rel="stylesheet" href="../section/section.css">
       <link rel="stylesheet" href="../card/card.css">
       <link rel="stylesheet" href="../footer/footer.css">
       <link rel="stylesheet" href="../nav/nav.css">
@@ -26,30 +28,11 @@
       <link rel="stylesheet" href="../tab/tab.css">
       <link rel="stylesheet" href="./page.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <style>
-        .group-elements {
-          display: flex;
-          flex-direction: column;
-          margin-right: 16px;
-          cursor: default;
-        }
-
-        .group-elements:last-child {
-          margin-right: 0;
-        }
-        
-        .group-elements__item + .group-elements__item {
-          margin-top: 16px;
-        }
-      </style>
     </head>
-    <body>
-      <header class="header">
+    <body class="preload">
+ <header class="header">
   <div class="container">
     <div class="header__inner">
-<<<<<<< HEAD
-      <a href="#">
-=======
       <div class="burger" >
         <svg id="burger-menu-open" class="burger__icon">
           <use xlink:href='../../components/sprite/sprite.svg#open-menu'></use>
@@ -59,10 +42,10 @@
         </svg>
        <div id="burger-menu" class="burger__menu">
         <div class="burger__line"></div>
-        <div id="burger-menu-close" class="burger__night-theme">
+        <div class="burger__night-theme">
         <p class="burger__title">Dark mode</p>
         <label class="toggler">
-          <input class="toggler__input" type="checkbox" tabindex="">
+          <input class="toggler__input" type="checkbox" id= "theme-changer-mobail">
           <div class="toggler__state">
             <div class="toggler__control">
               <div class="toggler__icon">
@@ -75,17 +58,16 @@
         <nav class="sidebar">
           <div class="sidebar__item">
             <h4 class="sidebar__title sidebar__title--grey">Components</h4>
-            <a class="sidebar__link" href="#">Modal</a>
-            <a class="sidebar__link" href="#">Tooltip</a>
-            <a class="sidebar__link" href="#">Avatar</a>
-            <a class="sidebar__link" href="#">Calendar</a>
-            <a class="sidebar__link" href="#">Histogram</a>
-            <a class="sidebar__link" href="#">Custom form elements</a>
+            <a class="sidebar__link" href="../../pages/modal-page/template.html">Modal</a>
+            <a class="sidebar__link" href="../../pages/tooltip-page/template.html">Tooltip</a>
+            <a class="sidebar__link" href="../../pages/avatar-page/template.html">Avatar</a>
+            <a class="sidebar__link" href="../../pages/calendar-page/template.html">Calendar</a>
+            <a class="sidebar__link" href="../../pages/histogram-page/template.html">Histogram</a>
+            <a class="sidebar__link" href="../../pages/element-page/template.html">Custom form elements</a>
           </div>
         </nav>
       </div>
-    </div> 
->>>>>>> master
+      </div> 
       <svg class="header__logo">
         <use xlink:href="../sprite/sprite.svg#logo"></use>
       </svg>
@@ -94,10 +76,9 @@
         <nav class="nav">
           <a class="nav__link nav__link--active" href="#tabs__content">Components</a>
           <a class="nav__link" href="#footer">About</a>
-          <a class="nav__link" href="#">Contact</a>
         </nav>
         <div class="header__control">
-          <svg class="header__icon">
+          <svg class="header__icon header__icon--sun">
             <use xlink:href="../sprite/sprite.svg#sun"></use>
           </svg>
           <label class="toggler header__toggler">
@@ -108,16 +89,19 @@
               </div>
             </div>
           </label>
-          <svg class="header__icon">
+          <svg class="header__icon header__icon--moon">
             <use xlink:href="../sprite/sprite.svg#moon"></use>
           </svg>         
         </div> <!-- /header__icon -->
       </div> <!-- /header__menu -->
     </div> <!-- /header__inner -->
-    <h1 class="header__title">Reusable component library</h1>
   </div> <!-- /container -->
-      </header>
-      <main class="main">
+</header>
+    <main class="main">
+      <section class = "section">
+        <div class="container">
+          <h1 class="section__title">Reusable component library</h1>
+        </div>
         <div class="tabs">
           <input class="tabs__input" type="radio" id="tab-1" name="tab" checked>
           <input class="tabs__input" type="radio" id="tab-2" name="tab">
@@ -132,11 +116,8 @@
             </div>
           </div>
          <div class="tabs__line"></div>
-<<<<<<< HEAD
+
          <div id="tabs__content" class="tabs__content tabs__content--tab-1">
-=======
-         <div class="tabs__content tabs__content--all-tabs">
->>>>>>> master
          <div class="container">
          <!-- Карточки -->
            <div class="tabs__list"> 
@@ -362,7 +343,7 @@
               </div>
             </a> <!-- /card -->
            </div> <!-- /tab-list -->
-         </div> <!--/ container -->
+         </div> <!--/container -->
          </div> <!-- /tab__content tab__content--all-tabs -->
         <div class="tabs__content tabs__content--tab-2">
          <div class="container">
@@ -467,7 +448,7 @@
               <input class="input__state input__state--invalid" type="text">
               <p class="input__subtitle">Some status</p>
               <svg class="input__icon input__icon--error">
-                <use xlink:href="../sprite/sprite.svg#question#error"></use>
+                <use xlink:href="../sprite/sprite.svg#error"></use>
               </svg>
             </div>
           </div>
@@ -477,7 +458,7 @@
              <input class="input__state input__state--success" type="text">
              <p class="input__subtitle">Some status</p>
             <svg class="input__icon input__icon--success">
-              <use xlink:href="../sprite/sprite.svg#question#success"></use>
+              <use xlink:href="../sprite/sprite.svg#success"></use>
             </svg>
            </div>
           </div>
@@ -487,11 +468,7 @@
         <div class="tabs__content tabs__content--tab-3">
           <div class="container">
             <div class="tabs__list">
-<<<<<<< HEAD
               <a class="card" href="../../pages/tooltip-page/template.html">
-=======
-              <a class="card">
->>>>>>> master
                 <div class="card__content">
                   <div class="tooltip card__tooltip">
                     <svg class="tooltip__question">
@@ -590,6 +567,23 @@
                 <div class="radio__title">Male</div>
               </div>
             </label>
+            <label class="radio">
+              <input class="radio__input" type="radio" name="radio">
+              <div class="radio__state">
+                <div class="radio__control">
+                  <div class="radio__icon"></div>
+                </div>
+                <div class="radio__title">Female</div>
+              </div>
+            </label>
+            <label class="radio">
+              <input class="radio__input" type="radio" name="radio" disabled>
+              <div class="radio__state radio__state--disabled">
+                <div class="radio__control radio__control--disabled">
+                </div>
+                <div class="radio__title">Special</div>
+              </div>
+            </label>
           <label class="checkbox">
             <input class="checkbox__input" type="checkbox" tabindex="" checked>
             <div class="checkbox__state">
@@ -599,24 +593,6 @@
                 </svg>                 
               </div>
               <div class="checkbox__title">Default</div>
-            </div>
-          </label>
-          <label class="toggler">
-            <input class="toggler__input" type="checkbox" tabindex="" checked>
-              <div class="toggler__state">
-                <div class="toggler__control">
-                  <div class="toggler__icon"></div>
-                </div>
-                <div class="toggler__title">Toggler</div>
-              </div>
-          </label>
-          <label class="radio">
-            <input class="radio__input" type="radio" name="radio">
-            <div class="radio__state">
-              <div class="radio__control">
-                <div class="radio__icon"></div>
-              </div>
-              <div class="radio__title">Female</div>
             </div>
           </label>
           <label class="checkbox">
@@ -630,6 +606,22 @@
                 <div class="checkbox__title">Default</div>
               </div>
           </label>
+          <label class="checkbox checkbox--disabled" disabled>
+            <input class="checkbox__input" type="checkbox">
+              <div class="checkbox__state">
+                <div class="checkbox__control checkbox__control--disabled"></div>
+                <div class="checkbox__title">Default</div>
+              </div>
+          </label>
+          <label class="toggler">
+            <input class="toggler__input" type="checkbox" tabindex="" checked>
+              <div class="toggler__state">
+                <div class="toggler__control">
+                  <div class="toggler__icon"></div>
+                </div>
+                <div class="toggler__title">Toggler</div>
+              </div>
+          </label>
           <label class="toggler">
             <input class="toggler__input" type="checkbox" tabindex="">
               <div class="toggler__state">
@@ -639,22 +631,7 @@
                 <div class="toggler__title">Toggler</div>
               </div>
           </label>
-          <label class="radio">
-            <input class="radio__input" type="radio" name="radio" disabled>
-            <div class="radio__state radio__state--disabled">
-              <div class="radio__control radio__control--disabled">
-              </div>
-              <div class="radio__title">Special</div>
-            </div>
-          </label>
-          <label class="checkbox" disabled>
-            <input class="checkbox__input" type="checkbox">
-              <div class="checkbox__state">
-                <div class="checkbox__control"></div>
-                <div class="checkbox__title">Default</div>
-              </div>
-          </label>
-          <label class="toggler" disabled>
+          <label class="toggler toggler--disabled" disabled>
             <input class="toggler__input" type="checkbox">
               <div class="toggler__state">
                 <div class="toggler__control">
@@ -727,7 +704,7 @@
                         <label class="input__title">Email</label>
                         <input class="input__state input__state--preview" type="email">
                       </div>
-                      <button class="btn btn-list__btn btn--primary btn-preview" type="submit">Submit</button>
+                      <button class="btn btn-list__btn btn--primary btn--preview" type="submit">Submit</button>
                       <svg class="modal__close">
                         <use xlink:href="../sprite/sprite.svg#close"></use>
                       </svg>
@@ -765,41 +742,51 @@
               </div>
             </div>
             <h3 class="tabs__title">ACCORDION</h3>
-              <div class="accordion">
-                <details class="accordion__item">
-                  <summary class="accordion__header">
-                    Accordion item 1
-                  </summary>
-                  <p class="accordion__text">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                    Velit officia consequat duis enim velit mollit. 
-                    Exercitation veniam consequat sunt nostrud amet.
-                  </p>
-                </details>
-                <details class="accordion__item">
-                  <summary class="accordion__header">
-                    Accordion item 2
-                  </summary>
-                  <p class="accordion__text">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                    Velit officia consequat duis enim velit mollit. 
-                    Exercitation veniam consequat sunt nostrud amet.
-                  </p>
-                </details>
-                <details class="accordion__item">
-                  <summary class="accordion__header">
-                    Accordion item 3
-                  </summary>
-                  <p class="accordion__text">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                    Velit officia consequat duis enim velit mollit. 
-                    Exercitation veniam consequat sunt nostrud amet.
-                  </p>
-                </details>
-              </div>
+            <div class="accordion">
+              <details class="accordion__item">
+                <summary class="accordion__header">
+                    <h1 class="accordion__title">Accordion item 1</h1>
+                      <svg class="accordion__icon">
+                        <use xlink:href="../../components/sprite/sprite.svg#arrow"></use>
+                       </svg>
+                </summary>
+                <p class="accordion__text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                  Velit officia consequat duis enim velit mollit. 
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </details>
+            <details class="accordion__item">
+              <summary class="accordion__header">
+                <h1 class="accordion__title">Accordion item 2</h1>
+                  <svg class="accordion__icon">
+                    <use xlink:href="../../components/sprite/sprite.svg#arrow"></use>
+                   </svg>
+              </summary>
+              <p class="accordion__text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                Velit officia consequat duis enim velit mollit. 
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+          </details>
+          <details class="accordion__item">
+            <summary class="accordion__header">
+              <h1 class="accordion__title">Accordion item 3</h1>
+                <svg class="accordion__icon">
+                  <use xlink:href="../../components/sprite/sprite.svg#arrow"></use>
+                 </svg>
+            </summary>
+            <p class="accordion__text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+              Velit officia consequat duis enim velit mollit. 
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+        </details>
+        </div>
             </div>
           </div>
         </div>
+       </section> 
       </main>
       <footer id="footer" class="footer">
         <div class="container">
@@ -813,4 +800,6 @@
     </body>
     <script src="../../05-lection3/02-modal/index.js"></script> 
     <script src="../../10-lection8/01-theme-changer/theme-changer.js"></script>
+    <script src="../../09-lection7/01-burger-menu/burger-menu.js"></script>
+    <script src="../../assets/js/load.js"></script>
 </html>

@@ -8,14 +8,13 @@
   width: 100%;
   height: 100%;
 
-
   display: none;
 }
 
 .modal--preview { /* модификатор для модалки в карточке */
   position: static;
   display: block;
-  width: 300px;
+  z-index: 0;
   height: 219px;
   background: var(--grey-2);
   border: 1px solid var(--grey-2);
@@ -34,15 +33,12 @@
   padding: 30px 40px;
   background-color: var(--white-bg);
   border-radius: 8px;
+  position: relative;
 }
 
 .modal--preview .modal__content { /* внутренний отступы для модалки в карточки */
   width: 240px;
   padding: 15px 20px;
-}
-
-.modal__header {
-  position: relative;
 }
 
 .modal__title {
@@ -58,16 +54,13 @@
   width: 20px;
   height: 20px;
   position: absolute;
-  top: -20px;
-  left: 100%;
-  z-index: 1;
-
+  top: 7px;
+  right: 0;
+  transform: translateX(-7px);
   cursor: pointer;
 }
 
 .modal--preview .modal__close {
-  top: -10px;
-  left: 98%;
   cursor: default;
 }
 
