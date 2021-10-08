@@ -1,0 +1,51 @@
+/* Стилизация tooltip */
+.tooltip {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    &__answer {
+        padding: 13px 21px 8px;
+        background-color: var(--blue-2);
+        border-radius: 10px;
+        position: relative;
+        transform: translate(0, -12px);
+        opacity: 0;
+        transition: opacity .4s linear;
+
+        &--visible {
+            opacity: 1;
+        }
+
+        &::after {
+            content: '';
+            border: 14px solid transparent;
+            border-top: 6px solid var(--blue-2);
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, 100%);
+        }
+    }
+
+    &__text {
+        font-family: 'Inter', san-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 400;
+        text-align: center;
+        color: var(--grey-2);
+    }
+  
+    &__question {
+        width: 26px;
+        height: 30px;
+        color: var(--color-icon);
+        cursor: pointer;
+
+        &:hover ~ .tooltip__answer {
+            opacity: 1;
+        }
+    } 
+}
+

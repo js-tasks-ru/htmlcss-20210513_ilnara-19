@@ -1,0 +1,78 @@
+/* Стилизация header*/
+
+@mixin flex ($content) {
+    display: flex;
+    justify-content: $content;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 0;
+    background-color: var(--white-bg);   
+
+    @media (max-width: 768px) {
+        position: sticky;
+        top: 0;
+        z-index: 2000;
+    }
+
+    &--grey {
+        padding: 0;
+        background-color: var(--main-bg);
+    }
+  
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--white-bg);
+    }
+  
+    &__logo {
+        width: 110px;
+        height: 32px;
+        color: var(--black-bg);
+
+        @media (max-width: 768px) {
+            margin: 0 auto;
+        }
+    }
+  
+    &__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+  
+    &__control {
+        display: flex;
+        align-items: center;
+    }
+  
+    &__icon {
+        width: 24px;
+        height: 24px;
+
+        &--sun {
+            color: var(--icon-color-sun);
+        }
+    
+        &--moon {
+            color: var( --icon-color-moon);
+        }
+    }
+  
+    &__toggler {
+        margin: 0 15px;
+    }
+}
+
+
+

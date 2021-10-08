@@ -1,0 +1,60 @@
+// Стилизация карточек 
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    width: calc(33.333333% - 30px);
+    margin: 15px;
+    padding: 32px 25px;
+    border-radius: 12px;
+    background-color: var(--white-bg);
+    box-shadow: 0 2px 4px 0 rgba(var(--black), .05);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+        width: calc(50% - 30px);
+        height: 367px;
+    }
+  
+    @media (max-width: 480px) {
+        margin-bottom: 0;
+        width: calc(100% - 30px);
+    }
+
+    &__content {
+        width: 100%;
+        @include flex;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    &__footer {
+        @include flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin: 25px 0 6px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 1.17;
+        color: var(--text-primary);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__suptitle {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.17;
+        color: var(--grey-bg);
+    }
+}
+

@@ -1,0 +1,27 @@
+/* Стилизация аватара*/
+
+@mixin size($width, $height) {
+    width: 102px;
+    height: 102px;
+}
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+
+    &--main {
+        @include size(102px, 102px);
+    }
+
+    &--skeleton {
+        @include size(64px, 64px);
+        background-color: var(#DDE2E5);
+    }
+
+    &--large {
+        @include size(106px, 106px);
+    }
+}
+
+
+
+
