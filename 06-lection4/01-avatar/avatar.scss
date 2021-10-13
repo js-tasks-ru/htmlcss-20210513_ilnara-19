@@ -1,9 +1,5 @@
 /* Стилизация аватара*/
-
-@mixin size($width, $height) {
-    width: 102px;
-    height: 102px;
-}
+@import '../../assets/css/mixin';
 .avatar {
     border-radius: 50%;
     object-fit: cover;
@@ -14,7 +10,7 @@
 
     &--skeleton {
         @include size(64px, 64px);
-        background-color: var(#DDE2E5);
+        background-color: var(--grey-2);
     }
 
     &--large {

@@ -1,11 +1,5 @@
-/* Стилизация аккордеона */
-
-@mixin font-middle {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    height: 1.5;
-}
+// Стилизация аккордеона 
+@import '../../assets/css/mixin';
 .accordion {
     width: 100%;
     max-width: 730px;
@@ -40,7 +34,7 @@
     }
 
     &__title {
-        @include font-middle;
+        @include font($font-inter, 16px, 400, 1.5);
     }
 
     &__icon {
@@ -51,7 +45,7 @@
 
     &__text {
         padding: 0 32px 32px;
-        @include font-middle;
+        @include font($font-inter, 16px, 400, 1.5);
         color: var(--text-primary);
     }
 }

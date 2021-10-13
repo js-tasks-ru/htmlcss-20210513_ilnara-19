@@ -1,15 +1,16 @@
-/* Стилизация мобильного меню */
+//Стилизация мобильного меню
+@import '../../assets/css/mixin';
+
 .burger {
     flex-direction: column;
     display: none;
 
-    @media (max-width: 768px) {
+    @include media(middle) {
         display: block;
     }
 
     &__icon {
-        width: 24px;
-        height: 24px;
+      @include size(24px, 24px);
         cursor: pointer;
         color: var(--grey-4);
 
@@ -58,9 +59,7 @@
     }
  
     &__night-theme {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      @include flex(space-between);
     }
  
     &__title {

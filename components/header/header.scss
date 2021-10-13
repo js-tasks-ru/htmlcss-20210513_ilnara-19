@@ -1,20 +1,13 @@
-/* Стилизация header*/
-
-@mixin flex ($content) {
-    display: flex;
-    justify-content: $content;
-    align-items: center;
-}
+// Стилизация header
+@import '../../assets/css/mixin';
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center);
     flex-direction: column;
     padding: 25px 0;
     background-color: var(--white-bg);   
 
-    @media (max-width: 768px) {
+    @include media(middle) {
         position: sticky;
         top: 0;
         z-index: 2000;
@@ -26,27 +19,22 @@
     }
   
     &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(space-between);
         background-color: var(--white-bg);
     }
   
     &__logo {
-        width: 110px;
-        height: 32px;
+        @include size(110px, 32px);
         color: var(--black-bg);
 
-        @media (max-width: 768px) {
+        @include media(middle) {
             margin: 0 auto;
         }
     }
   
     &__menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @media (max-width: 768px) {
+      @include flex(center);
+      @include media(middle) {
             display: none;
         }
     }
@@ -57,9 +45,7 @@
     }
   
     &__icon {
-        width: 24px;
-        height: 24px;
-
+      @include size(24px, 24px);
         &--sun {
             color: var(--icon-color-sun);
         }

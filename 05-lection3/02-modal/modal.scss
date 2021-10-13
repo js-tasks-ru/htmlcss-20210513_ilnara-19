@@ -1,4 +1,6 @@
-/* Стилизация modal */
+// Стилизация modal 
+@import '../../assets/css/mixin';
+
 .modal {
     position: fixed;
     top: 0;
@@ -13,7 +15,7 @@
         background-color: rgba(221, 226, 229, .7);
     }
   
-    &--preview { /* модификатор для модалки в карточке */
+    &--preview { // модификатор для модалки в карточке 
         position: static;
         display: block;
         z-index: 0;
@@ -38,17 +40,14 @@
         position: relative;
     }
 
-    &--preview &__content { /* внутренний отступы для модалки в карточки */
+    &--preview &__content { // внутренний отступы для модалки в карточки 
         width: 240px;
         padding: 15px 20px;
     }
 
     &__title {
         margin-bottom: 10px;
-        font-family: 'Inter', sans-serif;
-        font-size: 18px;
-        line-height: 1.2;
-        font-weight: 600;
+        @include font($font-inter, 18px, 600, 1.2);
         color: var(--blue-bg);
     }
 

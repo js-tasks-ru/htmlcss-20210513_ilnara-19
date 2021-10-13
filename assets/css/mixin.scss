@@ -1,0 +1,63 @@
+
+@import './variables-scss.scss';
+
+@mixin font($font, $size, $weight, $line) {
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line;
+}
+
+@mixin control{
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+    outline: none;
+    position: absolute;
+}
+
+@mixin state{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+@mixin disabled{
+    pointer-events: none;
+    cursor: default;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin skeleton {
+  background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--white-1) 38.47%, var(--white-2) 56.48%, var(--white-3) 77.5%, var(--grey-2) 102.52%);  
+  animation: crd 2s ease-in-out infinite forwards;
+  background-size: 200%;
+}
+
+@mixin flex($content) {
+  display: flex;
+  justify-content: $content;
+  align-items: center;
+}
+
+@mixin margin($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+@mixin media($media){
+    @if map-has-key($breakpoints, $media){
+      @media (max-width: map-get($breakpoints, $media)){
+        @content;
+      }
+    }
+    @else {
+     @error 'ошибка';
+    } 
+   
+}

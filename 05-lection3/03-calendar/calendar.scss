@@ -1,4 +1,5 @@
-/* Стилизация календаря */
+// Стилизация календаря 
+@import '../../assets/css/mixin';
 .calendar {
     width: 100%;
     max-width: 320px;
@@ -9,10 +10,7 @@
   
     &__title {
         margin-bottom: 24px;
-        font-family: 'Inter', sans-serif;
-        font-size: 20px;
-        line-height: 1.2;
-        font-weight: 600;
+        @include font($font-inter, 20px, 600, 1.2);
         color: var(--blue-bg);
         text-align: center;
     }
@@ -37,10 +35,7 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 16px;
-        font-family: 'Inter', sans-serif;
-        font-size: 16px;
-        line-height: 1.25;
-        font-weight: 400;
+        @include font($font-inter, 16px, 400, 1.2);
         color: var(--blue-bg);
         text-align: center;
 

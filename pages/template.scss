@@ -1,8 +1,5 @@
-/* Стилизация страницы компонента*/
-@mixin flex {
-    display: flex;
-    align-items: center;
-}
+// Стилизация страницы компонента
+@import '../assets/css/mixin';
 
 .template {
     display: grid;
@@ -11,13 +8,12 @@
     min-height: 100vh;
     background-color: var(--main-bg);
 
-    @media (max-width: 768px) {
+    @include media(middle) {
         gap: 0;
     }
   
     &__header{
-        @include flex;
-        justify-content: space-between;
+        @include flex(space-between);
         height: 82px;
     }
 
@@ -28,20 +24,20 @@
     }
   
     &__menu {
-        @include flex;
-
-        @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        @include media(middle) {
             display: none;
         }
     }
 
     &__control {
-        @include flex;
+      display: flex;
+      align-items: center;
     }
 
     &__icon {
-        width: 24px;
-        height: 24px;
+      @include size(24px, 24px);
 
         &--sun {
             color: var(--icon-color-sun-tm);
@@ -60,7 +56,7 @@
         display: grid;
         grid-template-columns: 299px 1fr;
 
-        @media (max-width: 768px) {
+        @include media(middle) {
             grid-template-columns: auto;
         }
     }
@@ -73,17 +69,14 @@
         padding: 32px;
         overflow: hidden;
 
-        @media (max-width: 768px) {
+        @include media(middle) {
             padding-right: 0;
             padding-left: 0;
         }
 
         &-title {
             margin-bottom: 30px;
-            font-family: 'Inter', sans-serif;
-            font-size: 28px;
-            line-height: 1.4;
-            font-weight: normal;
+            @include font($font-inter, 28px, normal, 1.4);
             color: var(--grey-bg);
         }
 
@@ -99,7 +92,7 @@
         gap: 30px;
         margin-bottom: 30px;
 
-        @media (max-width: 480px) {
+        @include media(small) {
             display: grid;
             grid-template-columns: repeat(1, auto);
             grid-auto-flow: initial;
@@ -108,7 +101,7 @@
 
     &__footer {
         height: 82px;
-        @include flex;
+        display: flex;
         align-items: center;
         background-color: var(--main-bg); 
     }
@@ -123,7 +116,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@include media(middle) {
     aside {
         display: none;
     }

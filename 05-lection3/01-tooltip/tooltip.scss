@@ -1,4 +1,6 @@
-/* Стилизация tooltip */
+// Стилизация tooltip
+@import '../../assets/css/mixin';
+
 .tooltip {
     display: inline-flex;
     flex-direction: column-reverse;
@@ -29,10 +31,7 @@
     }
 
     &__text {
-        font-family: 'Inter', san-serif;
-        font-size: 16px;
-        line-height: 1.5;
-        font-weight: 400;
+      @include font($font-inter, 16px, 400, 1.5);
         text-align: center;
         color: var(--grey-2);
     }

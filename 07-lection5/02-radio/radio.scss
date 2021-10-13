@@ -1,19 +1,8 @@
-/* Стилизация радио баттон */
-
-@mixin font {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    height: 1.5;
-    font-weight: 400;
-}
+// Стилизация радио баттон
+@import '../../assets/css/mixin';
 
 .radio__input {
-    width: 1px;
-    height: 1px;
-    opacity: 0;
-    pointer-events: none;
-    outline: none;
-    position: absolute;
+  @include control;
 
     &:checked ~ .radio__state .radio__control {
         border: 2px solid var(--blue-2);
@@ -26,13 +15,10 @@
     &:checked ~ .radio__state .radio__title {
         text-decoration: none;
     }
-  
 }
 
 .radio__state {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+    @include state;
 
     &--disabled {
         opacity: .5;
@@ -41,8 +27,7 @@
 }
 
 .radio__control {
-    width: 28px;
-    height: 28px;
+  @include size(28px, 28px);
     border: 1px solid var(--grey-2);
     border-radius: 50%;
     position: relative;
@@ -53,8 +38,7 @@
 }
 
 .radio__icon {
-    width: 18px;
-    height: 18px;
+    @include size(18px, 18px); 
     border-radius: 50%;
     background-color: var(--blue-2);
     position: absolute;
@@ -65,8 +49,8 @@
 }
 
 .radio__title {
+    @include font($font-inter, 16px, 400, 1.5);
     margin-left: 12px;
-    @include font;
     color: var(--text-color);
 }
 

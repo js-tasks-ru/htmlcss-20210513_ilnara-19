@@ -1,22 +1,16 @@
-/* Стилизация чекбокса */
+// Стилизация чекбокса 
+@import '../../assets/css/mixin';
+
 .checkbox__input {
-    width: 1px;
-    height: 1px;
-    opacity: 0;
-    pointer-events: none;
-    outline: none;
-    position: absolute;
+  @include control;
 }
 
 .checkbox__state {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+    @include state;
 }
 
 .checkbox__control {
-    width: 28px;
-    height: 28px;
+    @include size(28px, 28px);
     border: 1px solid var(--grey-2);
     border-radius: 4px;
     position: relative;
@@ -27,8 +21,7 @@
 }
 
 .checkbox__icon {
-    width: 24px;
-    height: 24px;
+    @include size(24px, 24px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -38,16 +31,12 @@
 
 .checkbox__title {
     margin-left: 12px;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
+    @include font($font-inter, 16px, 400, 1.5);
     color: var(--text-color);
 }
 
 .checkbox--disabled {
-    pointer-events: none;
-    cursor: default;
+    @include disabled;
 }
 
 .checkbox__input:checked ~ .checkbox__state .checkbox__control

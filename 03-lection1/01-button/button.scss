@@ -1,4 +1,5 @@
-/* Стилизация кнопки */
+// Стилизация кнопки
+@import '../../assets/css/mixin';
 .btn {
     padding: 15px 10px;
     border: none;
@@ -18,7 +19,7 @@
     &--small {
         width: 15%;
 
-        @media (max-width: 768px) {
+        @include media(middle) {
             width: auto;
         }
     }
