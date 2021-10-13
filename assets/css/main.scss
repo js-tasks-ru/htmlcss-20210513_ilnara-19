@@ -1,0 +1,114 @@
+@import '../fonts/fonts.css';
+@import '../css/custom.css';
+@import './variables.css';
+@import '../../03-lection1/01-button/button.scss';
+@import '../../03-lection1/02-accordion/accordion.scss';
+@import '../../04-lection2/01-histogram/histogram.scss';
+@import '../../04-lection2/02-skeleton/skeleton.scss';
+@import '../../05-lection3/01-tooltip/tooltip.scss';
+@import '../../05-lection3/02-modal/modal.scss';
+@import '../../05-lection3/03-calendar/calendar.scss';
+@import '../../06-lection4/01-avatar/avatar.scss';
+@import '../../07-lection5/01-checkbox/checkbox.scss';
+@import '../../07-lection5/02-radio/radio.scss';
+@import '../../07-lection5/03-toggler/toggler.scss';
+@import '../../07-lection5/04-input/input.scss';
+@import '../../09-lection7/01-burger-menu/burger-menu.scss';
+@import '../../components/card/card.scss';
+@import '../../components/footer/footer.scss';
+@import '../../components/header/header.scss';
+@import '../../components/main/main.css';
+@import '../../components/nav/nav.scss';
+@import '../../components/page/page.css';
+@import '../../components/section/section.scss';
+@import '../../components/sidebar/sidebar.scss';
+@import '../../components/tab/tab.scss';
+@import '../../pages/template.scss';
+@import '../../components/flex/flex.css';
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Reset */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.preload * {
+    transition: none !important;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+span {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 0;
+}
+
+pre{
+    margin: 0;
+    padding: 0;
+}
+
+code{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Убираем стандартный маркер Chrome */
+details summary::-webkit-details-marker {
+    display: none
+}
+/* Убираем стандартный маркер Firefox */
+details > summary {
+    list-style: none;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+

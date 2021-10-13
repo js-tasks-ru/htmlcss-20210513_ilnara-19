@@ -1,0 +1,59 @@
+// Стилизация toggler
+@import '../../assets/css/mixin';
+
+.toggler__input {
+    @include control;
+
+    &:checked ~ .toggler__state .toggler__control {
+        background-color: var(--blue-2);
+        border-color: var(--blue-2); 
+    }
+
+    &:checked ~ .toggler__state .toggler__icon {
+        background-color: var(--white);
+        transform: translate(0, -50%);
+        transition: transform 300ms linear;
+    }
+
+    &:focus ~ .toggler__state .toggler__control {
+        border-color: var(--blue-2);
+    }
+}
+
+.toggler__state {
+    @include state;
+
+    &--disabled {
+        opacity: .5;
+        pointer-events: none;
+    }
+}
+
+.toggler__control {
+    @include size(52px, 28px);
+    border: 1px solid var(--grey-2);
+    border-radius: 16px;
+    transition: background-color 300ms linear;
+    position: relative;
+}
+
+.toggler__icon {
+    @include size(24px, 24px);
+    border-radius: 50%;
+    background-color: var(--grey-2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    transition: transform 300ms linear;
+}
+
+.toggler__title {
+    margin-left: 12px;
+    @include font($font-inter, 16px, 400, 1.5);
+    color: var(--text-color);
+}
+
+.toggler--disabled {
+    @include disabled;
+}

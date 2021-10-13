@@ -1,0 +1,108 @@
+// Стилизация календаря 
+@import '../../assets/css/mixin';
+.calendar {
+    width: 100%;
+    max-width: 320px;
+    padding: 28px 30px 40px;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+
+  
+    &__title {
+        margin-bottom: 24px;
+        @include font($font-inter, 20px, 600, 1.2);
+        color: var(--blue-bg);
+        text-align: center;
+    }
+
+    &__wrapper {
+        position: relative;
+        padding-bottom: 100%;
+    }
+
+    &__inner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+        @include font($font-inter, 16px, 400, 1.2);
+        color: var(--blue-bg);
+        text-align: center;
+
+        &--day {
+            margin-bottom: 24px;
+            font-size: 14px;
+            line-height: 1.4;
+            color: var(--grey-6);
+        }
+
+        &--active {
+            background-color: var(--blue-2);
+            color: var(--white);
+        }
+
+        &--between-active {
+            background-color: var(--blue-3);
+            color: var(--color-day);
+        }
+
+        &--number {
+            margin-bottom: 0;
+        }
+    }
+
+    &--preview {
+        width: 100%;
+        max-width: 202px;
+        padding: 15px 19px 10px;
+    }
+
+    &--preview &__title {
+        margin-bottom: 15px;
+        font-size: 13px;
+    }
+
+    &--preview &__item {
+        margin-bottom: 0;
+        font-size: 10px;
+    }
+
+    &--preview &__item--day {
+        margin-bottom: 0;
+        font-size: 9px;
+    }
+
+    &--template {
+        padding: 25px 30px 25px;
+    }
+
+    &--template &__title {
+        margin-bottom: 15px;
+    }
+
+    &--template &__item--day {
+        margin-bottom: 0px;
+    }
+
+    &--template &__item {
+        margin-bottom: 0px;
+    }
+
+    &--template &__item--active {
+        padding: 0px;
+    }
+
+    &--template &__item--between-active {
+        padding: 0px;
+    }
+}

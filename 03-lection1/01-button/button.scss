@@ -1,0 +1,71 @@
+// Стилизация кнопки
+@import '../../assets/css/mixin';
+.btn {
+    padding: 15px 10px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--white);
+    cursor: pointer;
+    text-align: center;
+
+    &--large {
+        width: 100%;
+    }
+  
+    &--small {
+        width: 15%;
+
+        @include media(middle) {
+            width: auto;
+        }
+    }
+  
+    &--preview {
+        padding: 7px 10px;
+    }
+  
+    &--primary {
+        background-color: var(--primary);
+        transition: background-color .2s linear;
+
+        &:hover {
+            background-color: var(--blueHover);
+        }
+    }
+  
+    &--secondary {
+        background-color: var(--secondary);
+        transition: background-color .2s linear;
+
+        &:hover {
+            background-color: var(--purpleHover);
+        }
+    }
+  
+    &--disabled {
+        opacity: 50%;
+        pointer-events: none;
+        cursor: default;
+    }
+  
+    &--alternate {
+        background-color: var(--white);
+        border: 1px solid var(--grey-3);
+        color: #495057;
+        transition: border .2s linear;
+    
+        &-disabled {
+            opacity: 50%;
+            pointer-events: none;
+            cursor: default;
+        }
+
+        &:hover {
+            border: 1px solid var(--black); 
+        }
+    }
+}

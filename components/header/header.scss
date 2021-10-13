@@ -1,0 +1,64 @@
+// Стилизация header
+@import '../../assets/css/mixin';
+
+.header {
+    @include flex(center);
+    flex-direction: column;
+    padding: 25px 0;
+    background-color: var(--white-bg);   
+
+    @include media(middle) {
+        position: sticky;
+        top: 0;
+        z-index: 2000;
+    }
+
+    &--grey {
+        padding: 0;
+        background-color: var(--main-bg);
+    }
+  
+    &__inner {
+        @include flex(space-between);
+        background-color: var(--white-bg);
+    }
+  
+    &__logo {
+        @include size(110px, 32px);
+        color: var(--black-bg);
+
+        @include media(middle) {
+            margin: 0 auto;
+        }
+    }
+  
+    &__menu {
+      @include flex(center);
+      @include media(middle) {
+            display: none;
+        }
+    }
+  
+    &__control {
+        display: flex;
+        align-items: center;
+    }
+  
+    &__icon {
+      @include size(24px, 24px);
+        &--sun {
+            color: var(--icon-color-sun);
+        }
+    
+        &--moon {
+            color: var( --icon-color-moon);
+        }
+    }
+  
+    &__toggler {
+        margin: 0 15px;
+    }
+}
+
+
+

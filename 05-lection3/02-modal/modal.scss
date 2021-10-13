@@ -1,0 +1,75 @@
+// Стилизация modal 
+@import '../../assets/css/mixin';
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    display: none;
+  
+    html[data-theme-dark] &{
+        background-color: rgba(221, 226, 229, .7);
+    }
+  
+    &--preview { // модификатор для модалки в карточке 
+        position: static;
+        display: block;
+        z-index: 0;
+        height: 219px;
+        background: var(--grey-2);
+        border: 1px solid var(--grey-2);
+        border-radius: 8px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+    }
+
+    &__content {
+        width: 400px;
+        padding: 30px 40px;
+        background-color: var(--white-bg);
+        border-radius: 8px;
+        position: relative;
+    }
+
+    &--preview &__content { // внутренний отступы для модалки в карточки 
+        width: 240px;
+        padding: 15px 20px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        @include font($font-inter, 18px, 600, 1.2);
+        color: var(--blue-bg);
+    }
+
+    &__close {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 7px;
+        right: 0;
+        transform: translateX(-7px);
+        cursor: pointer;
+    }
+
+    &--preview &__close{
+        cursor: default;
+    }
+
+    &__input {
+        margin-bottom: 15px;
+    }
+
+    &--preview &__input{
+        margin-bottom: 10px;
+    }
+}

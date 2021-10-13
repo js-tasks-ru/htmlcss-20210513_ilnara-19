@@ -1,0 +1,41 @@
+// Стилизация footer 
+@import '../../assets/css/mixin';
+
+.footer {
+    padding: 65px 0;
+    border-top: 1px solid var(--grey-2);
+
+    @include media(middle) {
+        padding: 50px 0;
+    }
+
+    @include media(xsmall) {
+        padding: 40px 0;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+        @include font($font-inter, 38px, 500, 1.3);
+        color: var(--text-primary); 
+        text-align: center;
+
+        @include media(middle) {
+            margin-bottom: 26px;
+            font-size: 28px;
+        }
+
+        @include media(xsmall) {
+            margin-bottom: 20px;
+        }
+    }
+  
+    &__text {
+        @include font($font-inter, 16px, 400, 1.5);
+        color: var(--text-primary); 
+        text-align: center;
+        @include media(xsmall){
+            font-size: 14px;
+        }
+    }
+}
+

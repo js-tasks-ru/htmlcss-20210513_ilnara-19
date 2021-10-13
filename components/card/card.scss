@@ -1,0 +1,54 @@
+// Стилизация карточек 
+@import '../../assets/css/mixin';
+
+.card {
+    width: calc(33.333333% - 30px);
+    margin: 15px;
+    padding: 32px 25px;
+    border-radius: 12px;
+    background-color: var(--white-bg);
+    box-shadow: 0 2px 4px 0 rgba(var(--black), .05);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    @include media(middle) {
+        width: calc(50% - 30px);
+        padding: 20px 15px;
+        min-height: 367px;
+    }
+  
+    @include media(small) {
+        margin-bottom: 0;
+        width: calc(100% - 30px);
+    }
+
+    &__content {
+        width: 100%;
+        @include flex(center);
+        flex-grow: 1;
+        flex-wrap: wrap;
+        
+    }
+
+    &__footer {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__title {
+        margin: 25px 0 6px;
+        @include font($font-roboto, 21px, 500, 1.7);
+        color: var(--text-primary);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__suptitle {
+      @include font($font-roboto, 16px, 400, 1.17);
+      color: var(--grey-bg);
+    }
+}
+

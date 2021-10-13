@@ -1,0 +1,72 @@
+// Стилизация чекбокса 
+@import '../../assets/css/mixin';
+
+.checkbox__input {
+  @include control;
+}
+
+.checkbox__state {
+    @include state;
+}
+
+.checkbox__control {
+    @include size(28px, 28px);
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    position: relative;
+
+    &--disabled {
+        background-color: var(--grey-2);
+    }
+}
+
+.checkbox__icon {
+    @include size(24px, 24px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.checkbox__title {
+    margin-left: 12px;
+    @include font($font-inter, 16px, 400, 1.5);
+    color: var(--text-color);
+}
+
+.checkbox--disabled {
+    @include disabled;
+}
+
+.checkbox__input:checked ~ .checkbox__state .checkbox__control
+{
+    background-color: var(--blue-2);
+    border-color: var(--blue-2); 
+    animation: shadow 600ms  1 ease-in forwards;
+}
+
+.checkbox__input:checked ~ .checkbox__state .checkbox__icon {
+    display: block;
+}
+
+.checkbox__input:focus ~ .checkbox__state .checkbox__control {
+    border-color: var(--blue-2);
+}
+
+@keyframes shadow {
+    0% {
+        transform: scale(.95);
+        box-shadow: 0 0 0 0 rgba(66, 99, 235, .7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(66, 99, 235, 0);
+    }
+
+    100% {
+        transform: scale(.95);
+        box-shadow: 0 0 0 0 rgba(66, 99, 235, 0);
+    }
+}

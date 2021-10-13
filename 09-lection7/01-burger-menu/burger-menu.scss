@@ -1,0 +1,71 @@
+//Стилизация мобильного меню
+@import '../../assets/css/mixin';
+
+.burger {
+    flex-direction: column;
+    display: none;
+
+    @include media(middle) {
+        display: block;
+    }
+
+    &__icon {
+      @include size(24px, 24px);
+        cursor: pointer;
+        color: var(--grey-4);
+
+        &--black{
+            color: var(--icon-color-menu);
+        }
+
+        &-close {
+            display: none;
+        }
+    }
+ 
+    &__active {
+        display: block;
+    }
+ 
+    &__no-active {
+        display: none;
+    }
+ 
+    &__line {
+        width: 100%;
+        margin: 24px 0;
+        border: 1px solid var(--grey-2);
+    }
+ 
+    &__menu {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2000;
+        padding: 0 15px;
+        background-color: var(--white-bg);
+        transform: translateX(-100vw);
+        transition: transform 200ms ease-in-out;
+
+        &--grey {
+            background-color: var(--main-bg);
+        }
+
+        &[data-open] {
+            transform: translateX(0);
+        }
+    }
+ 
+    &__night-theme {
+      @include flex(space-between);
+    }
+ 
+    &__title {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.2;
+        color: var(--text-primary);
+    }
+}

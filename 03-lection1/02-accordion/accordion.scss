@@ -1,0 +1,51 @@
+// Стилизация аккордеона 
+@import '../../assets/css/mixin';
+.accordion {
+    width: 100%;
+    max-width: 730px;
+
+    &__item {
+        margin-bottom: 8px;
+        border: 1px solid var(--grey-3);
+        border-radius: 8px;
+        background: var(--white-bg);
+  
+        &[open]>.accordion__header {
+            padding-bottom: 16px;
+        }
+
+        &[open] .accordion__icon  {
+            transform: rotate(180deg);
+        }
+  
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px;
+        padding-left: 32px;
+        color: var(--text-primary);
+    }
+
+    &__title {
+        @include font($font-inter, 16px, 400, 1.5);
+    }
+
+    &__icon {
+        width: 20px;
+        height: 10px;
+        cursor: pointer;
+    }
+
+    &__text {
+        padding: 0 32px 32px;
+        @include font($font-inter, 16px, 400, 1.5);
+        color: var(--text-primary);
+    }
+}

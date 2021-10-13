@@ -1,0 +1,56 @@
+// Стилизация радио баттон
+@import '../../assets/css/mixin';
+
+.radio__input {
+  @include control;
+
+    &:checked ~ .radio__state .radio__control {
+        border: 2px solid var(--blue-2);
+    }
+  
+    &:checked ~ .radio__state .radio__icon {
+        display: block;
+    }
+  
+    &:checked ~ .radio__state .radio__title {
+        text-decoration: none;
+    }
+}
+
+.radio__state {
+    @include state;
+
+    &--disabled {
+        opacity: .5;
+        pointer-events: none;
+    }
+}
+
+.radio__control {
+  @include size(28px, 28px);
+    border: 1px solid var(--grey-2);
+    border-radius: 50%;
+    position: relative;
+
+    &--disabled {
+        background-color: var(--grey-2);
+    }
+}
+
+.radio__icon {
+    @include size(18px, 18px); 
+    border-radius: 50%;
+    background-color: var(--blue-2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.radio__title {
+    @include font($font-inter, 16px, 400, 1.5);
+    margin-left: 12px;
+    color: var(--text-color);
+}
+

@@ -1,0 +1,74 @@
+// Стилизация скелетона 
+@import '../../assets/css/mixin';
+
+.skeleton {
+    width: 100%;
+    padding: 24px 40px 32px 24px;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+
+    &--middle {
+        width: 50%;
+
+        @include media(xsmall) {
+            width: auto;
+        }
+    }
+
+    &__header {
+        display: flex;
+        margin-bottom: 24px;
+    }
+
+    &__avatar {
+        width: 64px;
+        height: 64px;
+        margin-right: 16px;
+        @include skeleton;
+        border-radius: 50%;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin-top: 8px;
+    }
+
+    &__line {
+        height: 20px;
+        margin-bottom: 8px;
+        @include skeleton;
+
+        &--short {
+            width: 39%;
+        }
+
+        &--long {
+            width: 59%;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__content {
+        width: 100%;
+    }
+}
+
+@keyframes crd {
+    0% {
+        opacity: .5;
+        background-position: 100%;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+
